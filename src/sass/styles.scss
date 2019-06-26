@@ -1,7 +1,4 @@
 @import 'node_modules/bootstrap/scss/functions', 'node_modules/bootstrap/scss/functions';
-@import 'variables';
+@import 'coop-variables';
 @import 'node_modules/bootstrap/scss/bootstrap';
-
-html {
-  font-size: 62.5%;
-}
+@import 'coop-styles';
