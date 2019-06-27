@@ -11,8 +11,8 @@
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   user-select: none;
-  width: 100%;
   line-height: 1;
 
   &,
@@ -41,6 +41,10 @@
 .coop-button--small {
   padding: 7px 12px;
   font-size: 1.2rem;
+}
+
+.coop-button--wide {
+  width: 100%;
 }
 
 .coop-button--secondary {

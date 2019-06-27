@@ -17,6 +17,7 @@
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
+
   text-transform: none;
   line-height: 1;
 
@@ -27,52 +28,52 @@
 
 .coop-icon-eye-off {
   &:before {
-    content: $coop-icon-eye-off; 
+    content: $coop-icon-eye-off;
   }
 }
 .coop-icon-eye {
   &:before {
-    content: $coop-icon-eye; 
+    content: $coop-icon-eye;
   }
 }
 .coop-icon-checkmark {
   &:before {
-    content: $coop-icon-checkmark; 
+    content: $coop-icon-checkmark;
   }
 }
 .coop-icon-arrow-down {
   &:before {
-    content: $coop-icon-arrow-down; 
+    content: $coop-icon-arrow-down;
   }
 }
 .coop-icon-arrow-left {
   &:before {
-    content: $coop-icon-arrow-left; 
+    content: $coop-icon-arrow-left;
   }
 }
 .coop-icon-arrow-right {
   &:before {
-    content: $coop-icon-arrow-right; 
+    content: $coop-icon-arrow-right;
   }
 }
 .coop-icon-arrow-up {
   &:before {
-    content: $coop-icon-arrow-up; 
+    content: $coop-icon-arrow-up;
   }
 }
 .coop-icon-close {
   &:before {
-    content: $coop-icon-close; 
+    content: $coop-icon-close;
   }
 }
 .coop-icon-plus {
   &:before {
-    content: $coop-icon-plus; 
+    content: $coop-icon-plus;
   }
 }
 .coop-icon-trash {
   &:before {
-    content: $coop-icon-trash; 
+    content: $coop-icon-trash;
   }
 }
 

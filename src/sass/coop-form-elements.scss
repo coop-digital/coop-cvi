@@ -66,10 +66,10 @@
 .coop-form-note {
   font-size: 1.2rem;
   margin: -15px 3px 20px;
+  color: $gray-600;
 }
 
 // Password
-
 .coop-password-input__wrap {
   position: relative;
   margin-bottom: 20px;
@@ -106,7 +106,6 @@
 
 
 // Checkbox
-
 .coop-checkbox__label {
   display: flex;
   margin-bottom: 20px;
@@ -137,7 +136,6 @@
       color: $success;
       text-align: center;
       padding-top: 3px;
-      border-color: $success;
     }
   }
 }
@@ -147,5 +145,82 @@
   font-size: 1.4rem;
   padding-left: 35px;
   user-select: none;
-  line-height: 1.6;
+  line-height: 1.8;
+}
+
+// Radio
+.coop-radio__wrap {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.coop-radio__input {
+  @extend .coop-checkbox__input;
+
+  position: absolute;
+  top: 0;
+
+  &:before {
+    border-radius: 30px;
+  }
+
+  &:checked {
+    &:before {
+      content: "";
+    }
+
+    &:after {
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: #12872a;
+      position: absolute;
+      left: 6px;
+      border-radius: 32px;
+      top: 6px;
+    }
+  }
+}
+
+.coop-radio__label {
+  @extend .coop-checkbox__text;
+}
+
+.coop-radio__input:checked + .coop-radio__label{
+  color: $success;
+}
+
+// Validation
+
+.coop-validation {
+  color: $danger;
+  //display: none;
+  padding: 6px 16px;
+  margin: -10px 0 20px;
+  border-radius: $border-radius;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  position: relative;
+  background-color: lighten($danger, 35%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 16px solid lighten($danger, 35%);
+    top: -15px;
+    left: 50%;
+    margin-left: -8px;
+  }
+}
+
+.coop-input--has-error {
+  border-color: $danger;
 }

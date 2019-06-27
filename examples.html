@@ -18,7 +18,7 @@
 
       xmp {
         margin: 0;
-        line-height: 1;
+        line-height: 1.6;
         font-size: 16px;
       }
 
@@ -78,10 +78,11 @@
           <li><a href="#fonts">Fonts</a></li>
           <li><a href="#buttons">Buttons</a></li>
           <li><a href="#forms">Forms</a></li>
+          <li><a href="#icons">Icons</a></li>
           <li><a href="#frame">The Frame (in progress)</a></li>
           <li><a href="#navigation">Navigation (in progress)</a></li>
           <li><a href="#logos">Logos (in progress)</a></li>
-          <li><a href="#icons">Icons (in progress)</a></li>
+
         </ul>
       </section>
 
@@ -212,6 +213,7 @@
           <li>coop-button--secondary</li>
           <li>coop-button--info</li>
           <li>coop-button--dark</li>
+          <li>coop-button--wide</li>
         </ul>
       </section>
 
@@ -265,35 +267,106 @@
               <span class="coop-checkbox__text">Disclaimer text</span>
             </label>
 
-            <input type="radio" name="group1" id="r1" value="1" />
-            <label for="r1"> button one</label>
+            <div class="coop-radio__wrap">
+              <input type="radio" name="radio-group" id="r1" class="coop-radio__input" />
+              <label for="r1" class="coop-radio__label">Option one</label>
+            </div>
 
-            <input type="submit" class="coop-button" value="Submit" />
+            <div class="coop-radio__wrap">
+              <input type="radio" name="radio-group" id="r2" class="coop-radio__input" />
+              <label for="r2" class="coop-radio__label">Option two</label>
+            </div>
+
+            <label class="coop-label">Input with error</label>
+            <input type="text" class="coop-text-input coop-input--has-error" placeholder="Input with error" />
+            <div class="coop-validation">Error message</div>
+
+            <input type="submit" class="coop-button coop-button--wide" value="Submit" />
           </div>
         </div>
 
 
         <pre class="example-code">
           <xmp>
-            <label class="coop-label">Text input</label>
-            <input type="text" class="coop-input" placeholder="Text input" />
+              <label class="coop-label">Text input</label>
+              <input type="text" class="coop-text-input" placeholder="Text input" />
 
-            <label class="coop-label">Textarea</label>
-            <textarea class="coop-textarea"  placeholder="Text area"></textarea>
-            <p class="coop-form-note">Optional form note</p>
+              <label class="coop-label">Textarea</label>
+              <textarea class="coop-textarea"  placeholder="Text area"></textarea>
+              <p class="coop-form-note">Optional form note</p>
 
-            <label class="coop-label">File input</label>
-            <input type="file" class="coop-file-input" accept="image/x-png,image/jpeg" required>
+              <label class="coop-label">File input</label>
+              <input type="file" class="coop-file-input" accept="image/x-png,image/jpeg" required>
+
+              <label class="coop-label">Password input</label>
+
+              <div class="coop-password-input__wrap">
+                <input id="coop-password-input" type="password" class="coop-password-input" placeholder="Password input" />
+
+                <button class="coop-password-input__toggle" onclick="togglePasswordVisibility()">
+                  <i id="coop-password-input__icon" class="coop-icon coop-icon-eye"></i>
+                </button>
+              </div>
+              <p class="coop-form-note">Minimum 6 characters</p>
+
+              <script>
+                /* Password toggle script. Use as is or integrate in your JS-framework. */
+
+                function togglePasswordVisibility() {
+                  var passwordInput = document.getElementById('coop-password-input')
+                  var toggleIcon = document.getElementById('coop-password-input__icon')
+
+                  if (passwordInput.type === 'text') {
+                    passwordInput.type = 'password'
+                    toggleIcon.classList.add('coop-icon-eye')
+                    toggleIcon.classList.remove('coop-icon-eye-off')
+                  } else {
+                    passwordInput.type = 'text'
+                    toggleIcon.classList.remove('coop-icon-eye')
+                    toggleIcon.classList.add('coop-icon-eye-off')
+                  }
+                }
+              </script>
+
+              <label class="coop-checkbox__label">
+                <input class="coop-checkbox__input" type="checkbox" value="true">
+                <span class="coop-checkbox__text">Disclaimer text</span>
+              </label>
+
+              <div class="coop-radio__wrap">
+                <input type="radio" name="radio-group" id="r1" class="coop-radio__input" />
+                <label for="r1" class="coop-radio__label">Option one</label>
+              </div>
+
+              <div class="coop-radio__wrap">
+                <input type="radio" name="radio-group" id="r2" class="coop-radio__input" />
+                <label for="r2" class="coop-radio__label">Option two</label>
+              </div>
+
+              <label class="coop-label">Input with error</label>
+              <input type="text" class="coop-text-input coop-input--has-error" placeholder="Input with error" />
+              <div class="coop-validation">Error message</div>
+
+              <input type="submit" class="coop-button" value="Submit" />
           </xmp>
         </pre>
-
-
-        radio
-
-
-        error feeddback
-
       </section>
+
+      <section>
+          <h2 id="icon">Icons</h2>
+
+          <p>This project includes an icon font to be used in HTML</p>
+
+          <h3><i class="coop-icon coop-icon-checkmark"></i></h3>
+
+          <pre class="example-code">
+            <xmp>
+              <i class="coop-icon coop-icon-checkmark"></i>
+            </xmp>
+          </pre>
+
+          <p>See full list in src/fonts/coop-icons/style.css</p>
+        </section>
     </div>
   </body>
 </html>
