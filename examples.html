@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="utf-8">
+    <title>Examples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      .example-code {
+        background: #333;
+        color: #fff;
+        margin: 20px 0 40px;
+        padding: 25px 10px 0;
+      }
+
+      xmp {
+        margin: 0;
+        line-height: 1;
+        font-size: 16px;
+      }
+
+      section {
+        margin-bottom: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <h1>Coop Frontend Framework</h1>
+
+        <h2>Intro</h2>
+
+        <p>
+          This project containts basic styling for Coop-themed websites.
+          It combines a subset of Bootstrap 4 variables and general styling with specific Coop styling
+          based on the <a href="https://brand.coop.dk/d/No1yszXtHPVR">Corporate Visual Identity</a> (CVI).
+        </p>
+
+        <p>
+          Coop styles use <a href="http://getbem.com/introduction/">BEM syntax</a>, and class names
+          are prefixed <strong>coop-</strong> to avoid name clashing.
+        </p>
+
+        <p>
+          The project can be used as prebuild CSS or customized with additional Bootstrap elements
+          by tweaking the Sass source files.
+        </p>
+      </section>
+
+      <section>
+        <h3>Bootstrap files loaded by default</h3>
+
+        <ul>
+          <li>scss/functions</li>
+          <li>scss/variables</li>
+          <li>scss/mixins</li>
+          <li>scss/grid</li>
+          <li>scss/reboot</li>
+          <li>scss/type</li>
+          <li>scss/print</li>
+        </ul>
+
+        <p>
+          See <a href="https://getbootstrap.com/docs/4.3/layout/grid/">Bootstrap documentation</a>
+          on how to use the grid classes
+        </p>
+      </section>
+
+      <section>
+        <h3>Coop CVI elements</h3>
+
+        <ul>
+          <li><a href="#colors">Colors</a></li>
+          <li><a href="#fonts">Fonts</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#frame">The Frame (in progress)</a></li>
+          <li><a href="#navigation">Navigation (in progress)</a></li>
+          <li><a href="#logos">Logos (in progress)</a></li>
+          <li><a href="#icons">Icons (in progress)</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="colors">Colors</h2>
+
+        <p>The framework uses Boostrap Sass-variables with color codes from CVI</p>
+
+        <pre class="example-code">
+          $blue:    #7DAEDB;
+          $indigo:  #5A6EAE;
+          $purple:  #374B91;
+          $pink:    #B47378;
+          $red:     #C31414;
+          $orange:  #DB951E;
+          $yellow:  #FFE65F;
+          $green:   #73AE5F;
+          $teal:    #73B8BD;
+          $cyan:    #4BA5AA;
+
+          $primary:       $red;
+          $secondary:     $green;
+          $success:       #12872A;
+          $info:          $cyan;
+          $warning:       #F5D74B;
+          $danger:        #EF0D0D;
+          $light:         $gray-100;
+          $dark:          $gray-800;
+        </pre>
+      </section>
+
+
+      <section>
+        <h2 id="fonts">Fonts</h2>
+
+        <p>COOP font is owned and produced by Coop. It has 5 weights:</p>
+
+        <ul>
+          <li style="font-weight: 300; ">COOP Light (300)</li>
+          <li style="font-weight: 400;">COOP Regular (400)</li>
+          <li style="font-weight: 500;">COOP Medium (500)</li>
+          <li style="font-weight: 600;">COOP Semibold (600)</li>
+          <li style="font-weight: 700;">COOP Bold (700)</li>
+        </ul>
+
+        <p>Font is included in this project and added to body by default.</p>
+
+        <pre class="example-code">
+          div {
+            font-family: COOP;
+          }
+
+          div {
+            font-family: $font-family-base;
+          }
+          </pre>
+      </section>
+
+      <section>
+        <h2 id="buttons">Buttons</h2>
+
+        <p>Use on button or anchor tags</p>
+
+        <div class="row">
+          <div class="col-4">
+            <button class="coop-button">Coop Button</button>
+          </div>
+        </div>
+
+        <pre class="example-code">
+          <xmp>
+            <button class="coop-button">Coop Button</button>
+          </xmp>
+        </pre>
+
+        <div class="row">
+          <div class="col-4">
+            <button class="coop-button coop-button--medium">Coop Button Medium</button>
+          </div>
+        </div>
+
+        <pre class="example-code">
+          <xmp>
+              <button class="coop-button coop-button--medium">Coop Button Medium</button>
+          </xmp>
+        </pre>
+
+        <div class="row">
+          <div class="col-4">
+            <button class="coop-button coop-button--small">Coop Button Small</button>
+          </div>
+        </div>
+
+        <pre class="example-code">
+          <xmp>
+              <button class="coop-button coop-button--small">Coop Button Small</button>
+          </xmp>
+        </pre>
+
+
+        <div class="row">
+          <div class="col-4">
+            <button class="coop-button coop-button--inverted">Coop Button Inverted</button>
+          </div>
+        </div>
+
+        <pre class="example-code">
+          <xmp>
+            <button class="coop-button coop-button--inverted">Coop Button Inverted</button>
+          </xmp>
+        </pre>
+
+        <div class="row">
+          <div class="col-4">
+            <button class="coop-button coop-button--is-inactive">Coop Button Inactive</button>
+          </div>
+        </div>
+
+        <pre class="example-code">
+          <xmp>
+            <button class="coop-button coop-button--is-inactive">Coop Button Inactive</button>
+          </xmp>
+        </pre>
+
+        <h5>Additional modifiers</h5>
+
+        <ul>
+          <li>coop-button--secondary</li>
+          <li>coop-button--info</li>
+          <li>coop-button--dark</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="forms">Form elements</h2>
+
+        <div class="row">
+          <div class="col-4">
+            <label class="coop-label">Text input</label>
+            <input type="text" class="coop-text-input" placeholder="Text input" />
+
+            <label class="coop-label">Textarea</label>
+            <textarea class="coop-textarea"  placeholder="Text area"></textarea>
+            <p class="coop-form-note">Optional form note</p>
+
+            <label class="coop-label">File input</label>
+            <input type="file" class="coop-file-input" accept="image/x-png,image/jpeg" required>
+
+            <label class="coop-label">Password input</label>
+
+            <div class="coop-password-input__wrap">
+              <input id="coop-password-input" type="password" class="coop-password-input" placeholder="Password input" />
+
+              <button class="coop-password-input__toggle" onclick="togglePasswordVisibility()">
+                <i id="coop-password-input__icon" class="coop-icon coop-icon-eye"></i>
+              </button>
+            </div>
+            <p class="coop-form-note">Minimum 6 characters</p>
+
+            <script>
+              /* Password toggle script. Use as is or integrate in your JS-framework. */
+
+              function togglePasswordVisibility() {
+                var passwordInput = document.getElementById('coop-password-input')
+                var toggleIcon = document.getElementById('coop-password-input__icon')
+
+                if (passwordInput.type === 'text') {
+                  passwordInput.type = 'password'
+                  toggleIcon.classList.add('coop-icon-eye')
+                  toggleIcon.classList.remove('coop-icon-eye-off')
+                } else {
+                  passwordInput.type = 'text'
+                  toggleIcon.classList.remove('coop-icon-eye')
+                  toggleIcon.classList.add('coop-icon-eye-off')
+                }
+              }
+            </script>
+
+            <label class="coop-checkbox__label">
+              <input class="coop-checkbox__input" type="checkbox" value="true">
+              <span class="coop-checkbox__text">Disclaimer text</span>
+            </label>
+
+            <input type="radio" name="group1" id="r1" value="1" />
+            <label for="r1"> button one</label>
+
+            <input type="submit" class="coop-button" value="Submit" />
+          </div>
+        </div>
+
+
+        <pre class="example-code">
+          <xmp>
+            <label class="coop-label">Text input</label>
+            <input type="text" class="coop-input" placeholder="Text input" />
+
+            <label class="coop-label">Textarea</label>
+            <textarea class="coop-textarea"  placeholder="Text area"></textarea>
+            <p class="coop-form-note">Optional form note</p>
+
+            <label class="coop-label">File input</label>
+            <input type="file" class="coop-file-input" accept="image/x-png,image/jpeg" required>
+          </xmp>
+        </pre>
+
+
+        radio
+
+
+        error feeddback
+
+      </section>
+    </div>
+  </body>
+</html>

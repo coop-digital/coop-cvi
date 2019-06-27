@@ -1,4 +1,32 @@
-@import 'node_modules/bootstrap/scss/functions', 'node_modules/bootstrap/scss/functions';
+@import
+  'node_modules/bootstrap/scss/functions',
+  'node_modules/bootstrap/scss/variables'
+;
+
 @import 'coop-variables';
-@import 'node_modules/bootstrap/scss/bootstrap';
-@import 'coop-styles';
+
+@import
+  'node_modules/bootstrap/scss/mixins',
+  'node_modules/bootstrap/scss/grid',
+  'node_modules/bootstrap/scss/reboot',
+  'node_modules/bootstrap/scss/type',
+  'node_modules/bootstrap/scss/print'
+;
+
+%standard-focus {
+  &:focus {
+    --box-shadow-color:  #{$primary};
+    outline: none;
+    box-shadow: 0 0 10px var(--box-shadow-color);
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@import '../fonts/coop-icons/style.scss';
+@import 'coop-buttons';
+@import 'coop-fonts';
+@import 'coop-form-elements';
+

@@ -1,4 +1,5 @@
 const gulp = require('gulp')
+const { watch } = require('gulp')
 const prefix = require('gulp-autoprefixer')
 let cleanCSS = require('gulp-clean-css');
 let sass = require('gulp-sass')
@@ -13,8 +14,12 @@ function css() {
     .pipe(gulp.dest('./dist/'))
 }
 
-function watch() {
-  return gulp.watch('./src/sass/**/*.scss', css)
+function copyFonts() {
+  return gulp.src(['./src/fonts/**/*'])
+    .pipe(gulp.dest('./dist/fonts/'))
 }
 
-exports.default = watch
+exports.default = () => {
+  watch('./src/sass/**/*.scss', css);
+  watch('./src/fonts/**/*', copyFonts);
+};
