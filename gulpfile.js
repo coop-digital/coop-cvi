@@ -11,12 +11,12 @@ function css() {
     .pipe(sass().on('error', sass.logError))
     .pipe(prefix())
     .pipe(cleanCSS())
-    .pipe(gulp.dest('./coop-cvi/'))
+    .pipe(gulp.dest('./dist/'))
 }
 
 function copyFonts() {
   return gulp.src(['./src/fonts/**/*'])
-    .pipe(gulp.dest('./coop-cvi/fonts/'))
+    .pipe(gulp.dest('./dist/fonts/'))
 }
 
 exports.default = () => {
