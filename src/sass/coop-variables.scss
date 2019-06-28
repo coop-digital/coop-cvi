@@ -33,10 +33,10 @@ $dark:          $gray-800;
 $body-bg:                   $white;
 $body-color:                $gray-800;
 
-$link-color:                              theme-color("primary");
+$link-color:                              $primary;
 $link-decoration:                         none;
-$link-hover-color:                        darken($link-color, 15%);
-$link-hover-decoration:                   underline;
+$link-hover-color:                        darken($link-color, 25%);
+$link-hover-decoration:                   none;
 
 $hover-opacity:               0.7;
 
