@@ -196,7 +196,7 @@
 
 .coop-validation {
   color: $danger;
-  //display: none;
+  display: none;
   padding: 6px 16px;
   margin: -10px 0 20px;
   border-radius: $border-radius;
@@ -219,6 +219,10 @@
     left: 50%;
     margin-left: -8px;
   }
+}
+
+.coop-validation--has-error {
+  display: block;
 }
 
 .coop-input--has-error {
