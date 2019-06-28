@@ -1,6 +1,6 @@
 %coop-form-base {
   appearance: none;
-  border: 1px solid #eee;
+  border: 1px solid $gray-200;
   border-radius: $border-radius;
   font-size: 1.6rem;
   width: 100%;
@@ -84,15 +84,18 @@
 .coop-password-input__toggle {
   position: absolute;
   font-size: 2.5rem;
-  padding-right: 10px;
-  right: 5px;
-  top: 1px;
-  bottom: 1px;
+  padding: 5px 12px;
+  right: 0px;
+  top: 0;
+  bottom: 0;
   background: #fff;
   appearance: none;
   border: none;
   display: flex;
   justify-content: center;
+  border-radius: 0 $border-radius $border-radius 0;
+  border: 1px solid $gray-200;
+  border-left: none;
 
   &:focus {
     outline: none;
