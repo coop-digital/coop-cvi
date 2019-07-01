@@ -5,7 +5,7 @@
     <title>Examples</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="stylesheet" href="/styles.css">
 
     <style>
       .example-code {
@@ -17,12 +17,21 @@
 
       xmp {
         margin: 0;
+        margin-left: -65px;
         line-height: 1.6;
         font-size: 16px;
       }
 
       section {
         margin-bottom: 35px;
+      }
+
+      h1 {
+        margin-top: 50px;
+      }
+
+      h2 {
+        margin-top: 35px;
       }
     </style>
   </head>
@@ -47,6 +56,20 @@
         <p>
           The project can be used as prebuild CSS or customized with additional Bootstrap elements
           by tweaking the Sass source files.
+        </p>
+
+        <p>
+          Add the following stylesheet link to include the prebuilt styles.
+        </p>
+
+        <pre class="example-code">
+          <xmp style="margin-left: -65px;">
+            <link href="https://cdn.jsdelivr.net/gh/theisof/coop-cvi@v0.2-alpha/dist/styles.css" rel="stylesheet">
+          </xmp>
+        </pre>
+
+        <p>
+          Source code including SASS-variables is located <a href="https://theisof.github.io/coop-cvi/">here</a>.
         </p>
       </section>
 
