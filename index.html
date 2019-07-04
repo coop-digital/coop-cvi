@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="dist/styles.css">
 
     <style>
+      body {
+        padding-bottom: 50px;
+      }
+
       .example-code {
-        background: #333;
+        background: #222;
         color: #fff;
         margin: 20px 0 40px;
         padding: 25px 10px 0;
@@ -32,6 +36,7 @@
 
       h2 {
         margin-top: 35px;
+        margin-bottom: 10px;
       }
     </style>
   </head>
@@ -64,7 +69,7 @@
         </p>
 
         <pre class="example-code">
-          <xmp style="margin-left: -65px;">
+          <xmp>
             <link href="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v0.3-alpha/dist/styles.css" rel="stylesheet">
           </xmp>
         </pre>
@@ -106,9 +111,9 @@
           <li><a href="#buttons">Buttons</a></li>
           <li><a href="#forms">Forms</a></li>
           <li><a href="#icons">Icons</a></li>
-          <li><a href="#logos">Logos (in progress)</a></li>
-          <li><a href="#navigation">Navigation (in progress)</a></li>
-          <li><a href="#frame">The Frame (in progress)</a></li>
+          <li><a href="#logos">Logos (pending)</a></li>
+          <li><a href="#navigation">Navigation</a></li>
+          <li><a href="#frame">Footer (pending)</a></li>
         </ul>
       </section>
 
@@ -207,7 +212,6 @@
               <button class="coop-button coop-button--small">Coop Button Small</button>
           </xmp>
         </pre>
-
 
         <div class="row">
           <div class="col-lg-4">
@@ -392,6 +396,188 @@
           </pre>
 
           <p>See full list in <a href="src/fonts/coop-icons/style.css">icon file</a></p>
+        </section>
+
+        <section>
+          <h2 id="navigation">Navigation</h2>
+
+          <p>Coop navigation has three levels: global, site and context.</p>
+
+          <p>
+            <strong>Global nav</strong> should contain links that go accross Coop sites,
+            such as signup, login and customer service contact
+          </p>
+
+          <p>
+            <strong>Site nav</strong> contains the most important site specific links and
+            features, such as search
+          </p>
+
+          <p style="margin-bottom: 50px;">
+            <strong>Context nav</strong> is the traditional site specific page navigation
+          </p>
+
+
+          <header id="coop-nav" class="coop-nav ">
+            <!-- GLOBAL NAVIGATION -->
+            <div class="coop-global-nav">
+              <div id ="coop-nav-hide" class="coop-global-nav__close-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/theisof/coop-trolley@2.0.0/images/times-black.svg" class="coop-global-nav__close-image" alt="Luk">
+              </div>
+
+              <ul class="coop-nav__list coop-global-nav__list">
+                <li class="coop-global-nav__item"><a href="https://coop.dk/kundeservice" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Kundeservice</span></span></a></li>
+                <li class="coop-global-nav__item"><a href="https://tilmeld.coop.dk/standard/forside" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Bliv medlem</span></span></a></li>
+              </ul>
+            </div>
+
+            <!-- SITE NAVIGATION -->
+            <div class="coop-site-nav">
+              <div class="coop-site-nav__inner  ">
+                <div class="coop-site-nav__mobile">
+                  <img id="coop-nav-show" src="https://cdn.jsdelivr.net/gh/theisof/coop-trolley@2.0.0/images/burger.svg" alt="menu" class="coop-site-nav__mobile-toggle">
+                  <img src="https://cdn.jsdelivr.net/gh/theisof/coop-trolley@2.0.0/images/search.svg" alt="menu" class="coop-site-nav__mobile-search">
+                </div>
+
+                <a href="/" class="coop-site-nav__logo-wrap">
+                  <img src="https://cdn.jsdelivr.net/gh/theisof/coop-trolley@2.0.0/images/opskrifter-logo.svg" alt="logo" class="coop-site-nav__logo-image">
+                </a>
+
+                <div class="coop-site-nav__search">
+                  <div class="coop-nav-search">
+                      <img class="coop-nav-search__icon" src="https://cdn.jsdelivr.net/gh/theisof/coop-trolley@2.0.0/images/search.svg" alt="søg">
+                      <input class="coop-nav-search__input" placeholder="Søg...">
+                  </div>
+
+                  <div class="coop-site-nav__close-wrap">
+                    <img src="https://cdn.jsdelivr.net/gh/theisof/coop-trolley@2.0.0/images/times-black.svg" class="coop-site-nav__close-image" alt="Luk">
+                  </div>
+                </div>
+
+                <ul class="coop-nav__list coop-site-nav__list">
+                  <li class="coop-site-nav__item">
+                    <div class="coop-nav__link  coop-site-nav__link">
+                      <span>
+                        <span class="coop-site-nav__link-name">Gemte</span>
+                        <img src="https://cdn.jsdelivr.net/gh/theisof/coop-trolley@2.0.0/images/heart.svg" class="coop-site-nav__link-icon">
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- CONTEXT NAVIGATION -->
+            <div class="coop-context-nav">
+              <ul class="coop-nav__list coop-context-nav__list">
+                <li class="coop-context-nav__item"><a href="/temaer" class="coop-nav__link  coop-context-nav__link"><span><span class="coop-context-nav__link-name">Temaer</span></span></a></li>
+                <li class="coop-context-nav__item"><a href="/artikler" class="coop-nav__link coop-nav__link--is-current coop-context-nav__link--is-current coop-context-nav__link"><span><span class="coop-context-nav__link-name">Artikler</span></span></a></li>
+                <li class="coop-context-nav__item"><a href="/kategorier" class="coop-nav__link  coop-context-nav__link"><span><span class="coop-context-nav__link-name">Kategorier</span></span></a></li>
+                <li class="coop-context-nav__item"><a href="/om" class="coop-nav__link  coop-context-nav__link"><span><span class="coop-context-nav__link-name">Om</span></span></a></li>
+              </ul>
+            </div>
+
+            <script>
+              /* Toggle Mobile Navigation*/
+              document.getElementById('coop-nav-show').addEventListener("click", function(){
+                document.getElementById('coop-nav').classList.add('coop-nav--mobile-visible')
+              })
+
+              document.getElementById('coop-nav-hide').addEventListener("click", function(){
+                document.getElementById('coop-nav').classList.remove('coop-nav--mobile-visible')
+              })
+            </script>
+          </header>
+
+          <pre class="example-code">
+            <xmp>
+              <header id="coop-nav" class="coop-nav ">
+                <!-- GLOBAL NAVIGATION -->
+                <div class="coop-global-nav">
+                  <div id ="coop-nav-hide" class="coop-global-nav__close-wrap">
+                    <img src="https://cdn.jsdelivr.net/gh/theisof/coop-trolley@2.0.0/images/times-black.svg" class="coop-global-nav__close-image" alt="Luk">
+                  </div>
+
+                  <ul class="coop-nav__list coop-global-nav__list">
+                    <li class="coop-global-nav__item"><a href="https://coop.dk/kundeservice" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Kundeservice</span></span></a></li>
+                    <li class="coop-global-nav__item"><a href="https://tilmeld.coop.dk/standard/forside" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Bliv medlem</span></span></a></li>
+                  </ul>
+                </div>
+
+                <!-- SITE NAVIGATION -->
+                <div class="coop-site-nav">
+                  <div class="coop-site-nav__inner  ">
+                    <div class="coop-site-nav__mobile">
+                      <img id="coop-nav-show" src="https://cdn.jsdelivr.net/gh/theisof/coop-trolley@2.0.0/images/burger.svg" alt="menu" class="coop-site-nav__mobile-toggle">
+                      <img src="https://cdn.jsdelivr.net/gh/theisof/coop-trolley@2.0.0/images/search.svg" alt="menu" class="coop-site-nav__mobile-search">
+                    </div>
+
+                    <a href="/" class="coop-site-nav__logo-wrap">
+                      <img src="https://cdn.jsdelivr.net/gh/theisof/coop-trolley@2.0.0/images/opskrifter-logo.svg" alt="logo" class="coop-site-nav__logo-image">
+                    </a>
+
+                    <div class="coop-site-nav__search">
+                      <div class="coop-nav-search">
+                        <img class="coop-nav-search__icon" src="https://cdn.jsdelivr.net/gh/theisof/coop-trolley@2.0.0/images/search.svg" alt="søg">
+                        <input class="coop-nav-search__input" placeholder="Søg...">
+                      </div>
+
+                      <div class="coop-site-nav__close-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/theisof/coop-trolley@2.0.0/images/times-black.svg" class="coop-site-nav__close-image" alt="Luk">
+                      </div>
+                    </div>
+
+                    <ul class="coop-nav__list coop-site-nav__list">
+                      <li class="coop-site-nav__item">
+                        <div class="coop-nav__link  coop-site-nav__link">
+                          <span>
+                            <span class="coop-site-nav__link-name">Gemte</span>
+                            <img src="https://cdn.jsdelivr.net/gh/theisof/coop-trolley@2.0.0/images/heart.svg" class="coop-site-nav__link-icon">
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- CONTEXT NAVIGATION -->
+                <div class="coop-context-nav">
+                  <ul class="coop-nav__list coop-context-nav__list">
+                    <li class="coop-context-nav__item"><a href="/temaer" class="coop-nav__link  coop-context-nav__link"><span><span class="coop-context-nav__link-name">Temaer</span></span></a></li>
+                    <li class="coop-context-nav__item"><a href="/artikler" class="coop-nav__link coop-nav__link--is-current coop-context-nav__link--is-current coop-context-nav__link"><span><span class="coop-context-nav__link-name">Artikler</span></span></a></li>
+                    <li class="coop-context-nav__item"><a href="/kategorier" class="coop-nav__link  coop-context-nav__link"><span><span class="coop-context-nav__link-name">Kategorier</span></span></a></li>
+                    <li class="coop-context-nav__item"><a href="/om" class="coop-nav__link  coop-context-nav__link"><span><span class="coop-context-nav__link-name">Om</span></span></a></li>
+                  </ul>
+                </div>
+              </header>
+
+              <script>
+                /* Toggle Mobile Navigation*/
+                document.getElementById('coop-nav-show').addEventListener("click", function(){
+                  document.getElementById('coop-nav').classList.add('coop-nav--mobile-visible')
+                })
+
+                document.getElementById('coop-nav-hide').addEventListener("click", function(){
+                  document.getElementById('coop-nav').classList.remove('coop-nav--mobile-visible')
+                })
+              </script>
+            </xmp>
+          </pre>
+
+        </section>
+
+        <section>
+          <h2 id="logos">Logos</h2>
+
+          <p>Use Coop logos directly from CDN</p>
+
+          <img src="dist/logo/coop/coop-red.svg" style="width: 250px;" alt="Logo">
+
+          <pre class="example-code">
+            <xmp>
+              <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v0.4-alpha/dist/logo/coop/coop-red.svg" alt="Logo">
+            </xmp>
+          </pre>
         </section>
     </div>
   </body>

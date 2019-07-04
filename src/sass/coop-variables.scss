@@ -30,6 +30,8 @@ $danger:        #EF0D0D;
 $light:         $gray-100;
 $dark:          $gray-800;
 
+$color-coconut-3: #EBEBE1;
+
 $body-bg:                   $white;
 $body-color:                $gray-800;
 
@@ -64,3 +66,9 @@ $h5-font-size:                $font-size-base * 1.25;
 $h6-font-size:                $font-size-base;
 
 $icomoon-font-path:           "fonts/coop-icons/fonts";
+
+$site-nav-height:             60px;
+$global-nav-height:           32px;
+
+$z-index-backdrop: 100000;
+
