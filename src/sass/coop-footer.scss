@@ -1,7 +1,6 @@
 .coop-footer {
   background: $gray-800;
   color: #fff;
-  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -39,6 +38,14 @@
     }
 
   }
+}
+
+.coop-footer__contact {
+  background: $gray-900;
+  padding: 50px;
+  text-align: center;
+  font-weight: $font-weight-medium;
+  font-size: 1.4rem;
 }
 
 @media (min-width: map-get($grid-breakpoints, "lg")) {
