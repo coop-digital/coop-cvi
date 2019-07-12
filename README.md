@@ -1,6 +1,11 @@
 # Coop Frontend Framework
 
-### See examples and how to use [here](https://coop-digital.github.io/coop-cvi/).
+### *See examples and how to use [here](https://coop-digital.github.io/coop-cvi/).*
+
+### Table of content
+[Setup locally](#setup-locally)  
+[Extend Bootstrap](#extend-bootstrap)  
+[Styleguide](#styleguide)  
 
 ## Setup locally
 
