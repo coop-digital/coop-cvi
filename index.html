@@ -31,7 +31,7 @@
       }
 
       h1 {
-        margin-top: 50px;
+        margin-top: 80px;
       }
 
       h2 {
@@ -55,7 +55,9 @@
     <div class="container">
       <section>
         <h1>Coop CVI</h1>
-        <h5>Frontend framework for corporate visual identity</h5>
+        <h5>Frontend framework for Coop's corporate visual identity</h5>
+
+        <p style="margin-top: 15px;"><em>Looking for Github repo and styleguide? It's <a href="https://github.com/coop-digital/coop-cvi">here</a></em>.</p>
 
         <h2>Intro</h2>
 
@@ -81,7 +83,7 @@
 
         <pre class="example-code">
           <xmp>
-            <link href="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v0.5-alpha/dist/styles.css" rel="stylesheet">
+            <link href="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v1.0.0-beta/dist/styles.css" rel="stylesheet">
           </xmp>
         </pre>
 
@@ -433,7 +435,7 @@
             Use Coop logos directly from CDN.
           </p>
 
-          <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v0.5-alpha/dist/logo/coop/coop-red.svg" style="width: 250px;" alt="Logo">
+          <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v1.0.0-beta/dist/logo/coop/coop-red.svg" style="width: 250px;" alt="Logo">
 
           <p>
             Find the logo you want to use
@@ -447,13 +449,13 @@
               https://github.com/coop-digital/coop-cvi/blob/master/dist/logo/coop/coop-red.svg
 
               CDN base path:
-              https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v0.5-alpha/dist/
+              https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v1.0.0-beta/dist/
 
               CDN + Github to generate path for coop-red.svg:
-              https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v0.5-alpha/dist/logo/coop/coop-red.svg
+              https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v1.0.0-beta/dist/logo/coop/coop-red.svg
 
               HTML tag:
-              <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v0.5-alpha/dist/logo/coop/coop-red.svg" alt="Logo">
+              <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v1.0.0-beta/dist/logo/coop/coop-red.svg" alt="Logo">
             </xmp>
           </pre>
 
@@ -493,9 +495,28 @@
               </div>
 
               <ul class="coop-nav__list coop-global-nav__list">
-                <li class="coop-global-nav__item"><a href="https://coop.dk/kundeservice" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Kundeservice</span></span></a></li>
-                <li class="coop-global-nav__item"><a href="https://tilmeld.coop.dk/standard/forside" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Bliv medlem</span></span></a></li>
+                <li class="coop-global-nav__item">
+                  <a href="https://coop.dk/kundeservice" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Kundeservice</span></span></a>
+                </li>
+                <li class="coop-global-nav__item">
+                  <a href="https://mad.coop.dk/" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Dagligvarer fra Coop.dk MAD</span></span></a>
+                </li>
               </ul>
+
+              <div class='coop-global-nav__member coop-nav-member'>
+                <a href="https://medlem.coop.dk/" class='coop-nav-member__signup'>
+                  <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/coop-medlem-white.png" class='coop-nav-member__logo' alt />
+                </a>
+                <a href="#" class='coop-nav-member__login'>
+                  <div class="coop-nav-member__icon">
+                    <i class="coop-icon coop-icon-profile"></i>
+                  </div>
+
+                  <span class="coop-nav-member__label">
+                    Log ind
+                  </span>
+                </a>
+              </div>
             </div>
 
             <!-- SITE NAVIGATION -->
@@ -517,6 +538,7 @@
                   </div>
 
                   <div class="coop-site-nav__close-wrap">
+                    <!--- TODO: replace with icon font -->
                     <img src="https://cdn.jsdelivr.net/gh/theisof/coop-trolley@2.0.0/images/times-black.svg" class="coop-site-nav__close-image" alt="Luk">
                   </div>
                 </div>
@@ -524,8 +546,15 @@
                 <ul class="coop-nav__list coop-site-nav__list">
                   <li class="coop-site-nav__item">
                     <div class="coop-nav__link coop-site-nav__link">
+                      <i class="coop-icon coop-icon-pin coop-site-nav__link-icon"></i>
                       <div class="coop-site-nav__link-name">Gemte</div>
+                    </div>
+                  </li>
+
+                  <li class="coop-site-nav__item">
+                    <div class="coop-nav__link coop-site-nav__link">
                       <i class="coop-icon coop-icon-heart coop-site-nav__link-icon"></i>
+                      <div class="coop-site-nav__link-name">Gemte</div>
                     </div>
                   </li>
                 </ul>
@@ -557,6 +586,7 @@
           <pre class="example-code">
             <xmp>
               <header id="coop-nav" class="coop-nav ">
+
                 <!-- GLOBAL NAVIGATION -->
                 <div class="coop-global-nav">
                   <div id="coop-nav-hide" class="coop-global-nav__close">
@@ -564,9 +594,28 @@
                   </div>
 
                   <ul class="coop-nav__list coop-global-nav__list">
-                    <li class="coop-global-nav__item"><a href="https://coop.dk/kundeservice" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Kundeservice</span></span></a></li>
-                    <li class="coop-global-nav__item"><a href="https://tilmeld.coop.dk/standard/forside" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Bliv medlem</span></span></a></li>
+                    <li class="coop-global-nav__item">
+                      <a href="https://coop.dk/kundeservice" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Kundeservice</span></span></a>
+                    </li>
+                    <li class="coop-global-nav__item">
+                      <a href="https://mad.coop.dk/" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Dagligvarer fra Coop.dk MAD</span></span></a>
+                    </li>
                   </ul>
+
+                  <div class='coop-global-nav__member coop-nav-member'>
+                    <a href="https://medlem.coop.dk/" class='coop-nav-member__signup'>
+                      <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/coop-medlem-white.png" class='coop-nav-member__logo' alt />
+                    </a>
+                    <a href="#" class='coop-nav-member__login'>
+                      <div class="coop-nav-member__icon">
+                        <i class="coop-icon coop-icon-profile"></i>
+                      </div>
+
+                      <span class="coop-nav-member__label">
+                        Log ind
+                      </span>
+                    </a>
+                  </div>
                 </div>
 
                 <!-- SITE NAVIGATION -->
@@ -588,6 +637,7 @@
                       </div>
 
                       <div class="coop-site-nav__close-wrap">
+                        <!--- TODO: replace with icon font -->
                         <img src="https://cdn.jsdelivr.net/gh/theisof/coop-trolley@2.0.0/images/times-black.svg" class="coop-site-nav__close-image" alt="Luk">
                       </div>
                     </div>
@@ -595,8 +645,15 @@
                     <ul class="coop-nav__list coop-site-nav__list">
                       <li class="coop-site-nav__item">
                         <div class="coop-nav__link coop-site-nav__link">
+                          <i class="coop-icon coop-icon-pin coop-site-nav__link-icon"></i>
                           <div class="coop-site-nav__link-name">Gemte</div>
+                        </div>
+                      </li>
+
+                      <li class="coop-site-nav__item">
+                        <div class="coop-nav__link coop-site-nav__link">
                           <i class="coop-icon coop-icon-heart coop-site-nav__link-icon"></i>
+                          <div class="coop-site-nav__link-name">Gemte</div>
                         </div>
                       </li>
                     </ul>
@@ -758,6 +815,10 @@
           </footer>
         </xmp>
       </pre>
+
+      <hr />
+
+      <p style="margin: 35px 0;">All rights reserved Coop Danmark A/S</p>
     </div>
   </body>
 </html>
