@@ -21,8 +21,8 @@
     color: #fff;
   }
 
-  &:active,
-  &:hover {
+  &:hover,
+  &:active {
     opacity: $hover-opacity;
     text-decoration: none;
     color: #fff;
@@ -54,7 +54,7 @@
   }
 
   &:focus {
-    --box-shadow-color:  #{$secondary};
+    --focus-color:  #{$secondary};
   }
 }
 
@@ -65,7 +65,7 @@
   }
 
   &:focus {
-    --box-shadow-color:  #{$info};
+    --focus-color:  #{$info};
   }
 }
 
@@ -76,7 +76,7 @@
   }
 
   &:focus {
-    --box-shadow-color:  #{$dark};
+    --focus-color:  #{$dark};
   }
 }
 
@@ -104,5 +104,13 @@
   &:hover {
     opacity: 1 !important;
     box-shadow: none !important;
+  }
+}
+
+@media (max-width: map-get($grid-breakpoints, "md")) {
+  .coop-button {
+    &:hover {
+      opacity: 1;
+    }
   }
 }

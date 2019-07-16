@@ -15,9 +15,8 @@
 
 %standard-focus {
   &:focus {
-    --box-shadow-color:  #{$primary};
-    outline: none;
-    box-shadow: 0 0 10px var(--box-shadow-color);
+    --focus-color:  #{$primary};
+    outline-color: var(--focus-color);
   }
 }
 
