@@ -1,20 +1,47 @@
 .coop-footer {
   background: $gray-800;
-  color: #fff;
+  color: $white;
   text-align: center;
+
+  &.light {
+    background: $gray-200;
+
+    .coop-footer__title {
+      color: $gray-800;
+    }
+
+    .coop-footer__list {
+      li {
+        a {
+          color: $gray-800;
+
+          &:hover,
+          &:active,
+          &:focus {
+            color: $black;
+          }
+        }
+      }
+    }
+  }
 }
 
 .coop-footer__logo {
   max-width: 100%;
   width: 180px;
-  margin: 0 auto 40px;
+  margin: 0 auto;
   display: block;
-  padding-top: 15px;
+  padding: 15px 0 15px;
+}
+
+.coop-footer__brand {
+  background: $white;
 }
 
 .coop-footer__title {
   font-size: 1.6rem;
   font-weight: bold;
+  padding-top: 50px;
 }
 
 .coop-footer__list {
@@ -27,7 +54,7 @@
   }
 
   a {
-    color: #fff;
+    color: $white;
     font-size: 1.4rem;
     font-weight: $font-weight-medium;
 
@@ -48,6 +75,22 @@
   font-weight: $font-weight-medium;
   font-size: 1.4rem;
   line-height: 1.8;
+}
+
+.coop-footer__more_brands {
+  text-align: center;
+
+  .coop-footer__title {
+    text-align: center;
+  }
+
+  .coop-footer__logo {
+    max-width: 100%;
+    width: 100px;
+    margin: 0 1rem;
+    display: inline-block;
+    padding: 15px 0 15px;
+  }
 }
 
 @media (min-width: map-get($grid-breakpoints, "lg")) {

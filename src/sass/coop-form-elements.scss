@@ -2,7 +2,7 @@
   appearance: none;
   border: 1px solid $gray-200;
   border-radius: $border-radius;
-  font-size: 1.6rem;
+  font-size: $font-size-base;
   width: 100%;
   padding: 10px 14px;
   margin-bottom: 20px;
@@ -23,7 +23,7 @@
 }
 
 .coop-label {
-  font-size: 1.4rem;
+  font-size: $font-size-base;
   font-weight: $font-weight-medium;
 }
 
@@ -58,10 +58,10 @@
     top: 0;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: $font-size-base;
   }
 
-  &:valid:before {
+  &.required:valid:before {
     @extend .coop-icon;
     content: "\e907";
 
@@ -72,7 +72,7 @@
 }
 
 .coop-form-note {
-  font-size: 1.2rem;
+  font-size: $font-size-base - 2;
   margin: -15px 3px 20px;
   color: $gray-600;
 }
@@ -91,7 +91,7 @@
 
 .coop-password-input__toggle {
   position: absolute;
-  font-size: 1.4rem;
+  font-size: $font-size-base - 2;
   padding: 5px 12px;
   right: 1px;
   top: 1px;
@@ -110,7 +110,7 @@
 }
 
 .coop-password-input__toggle--icon {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
 }
 
 // Checkbox
@@ -135,7 +135,7 @@
     border: 1px solid $gray-400;
     border-radius: 5px;
     background: #fff;
-    margin-left: -10px;
+    margin-left: -7px;
   }
 
   &:checked {
@@ -153,9 +153,9 @@
 
 .coop-checkbox__text {
   font-weight: normal;
-  font-size: 1.4rem;
-  line-height: 1.4;
-  padding-left: 30px;
+  font-size: 12px;
+  line-height: 1.9;
+  padding-left: 15px;
   user-select: none;
 }
 
@@ -171,10 +171,10 @@
   @extend .coop-checkbox__input;
 
   position: absolute;
-  top: 0;
 
   &:before {
     border-radius: 30px;
+    margin-top: -7px;
   }
 
   &:checked {
@@ -184,13 +184,13 @@
 
     &:after {
       content: "";
-      width: 12px;
-      height: 12px;
+      width: 16px;
+      height: 16px;
       background: #12872a;
       position: absolute;
       border-radius: 32px;
-      top: 6px;
-      left: -4px;
+      top: -2.8px;
+      left: -3.2px;
     }
   }
 }
@@ -199,6 +199,7 @@
   @extend .coop-checkbox__text;
 
   line-height: 1.8;
+  padding-left: 40px;
 }
 
 .coop-radio__input:checked + .coop-radio__label{
@@ -214,7 +215,7 @@
   margin: -10px 0 20px;
   border-radius: $border-radius;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: $font-size-base - 2;
   line-height: 1.8rem;
   position: relative;
   background-color: lighten($danger, 35%);

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap');
+
 $font-bast-path: 'https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/fonts';
 
 @font-face{
@@ -38,4 +40,322 @@ $font-bast-path: 'https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/fonts';
        url('#{$font-bast-path}/WOFF/COOPWeb-Bold.woff') format('woff');
   font-weight: 700;
   font-style: bold;
+}
+
+.xsmall, span.xsmall {
+  font-size: $font-size-base - 4;
+}
+
+.small, span.small {
+  font-size: $font-size-base - 2;
+}
+
+.large, span.large {
+  font-size: $font-size-base + 2;
+}
+
+h1, .h1, .h1-standin {
+  font-size: $h1-font-size;
+
+  &.large, & span.large {
+    font-size: $h1-font-size + 2;
+  }
+
+  &.small, & span.small {
+    font-size: $h1-font-size - 2;
+  }
+
+  &.xsmall, & span.xsmall {
+    font-size: $h1-font-size - 4;
+  }
+
+  @include media-breakpoint-down(md) { 
+    font-size: 36px;
+
+    &.large, & span.large {
+      font-size: 36px + 2;
+    }
+
+    &.small, & span.small {
+      font-size: 36px - 2;
+    }
+
+    &.xsmall, & span.xsmall {
+      font-size: 36px - 4;
+    }
+  }
+
+  @include media-breakpoint-down(sm) { 
+    font-size: 30px;
+
+    &.large, & span.large {
+      font-size: 30px + 2;
+    }
+
+    &.small, & span.small {
+      font-size: 30px - 2;
+    }
+
+    &.xsmall, & span.xsmall {
+      font-size: 30px - 4;
+    }
+  }
+}
+
+h2, .h2, .h2-standin {
+  font-size: $h2-font-size;
+
+  &.large, & span.large {
+    font-size: $h2-font-size + 2;
+  }
+
+  &.small, & span.small {
+    font-size: $h2-font-size - 2;
+  }
+
+  &.xsmall, & span.xsmall {
+    font-size: $h2-font-size - 4;
+  }
+
+  @include media-breakpoint-down(md) { 
+    font-size: 30px;
+
+    &.large, & span.large {
+      font-size: 30px + 2;
+    }
+
+    &.small, & span.small {
+      font-size: 30px - 2;
+    }
+
+    &.xsmall, & span.xsmall {
+      font-size: 30px - 4;
+    }
+  }
+
+  @include media-breakpoint-down(sm) { 
+    font-size: 24px;
+
+    &.large, & span.large {
+      font-size: 24px + 2;
+    }
+
+    &.small, & span.small {
+      font-size: 24px - 2;
+    }
+
+    &.xsmall, & span.xsmall {
+      font-size: 24px - 4;
+    }
+  }
+}
+
+h3, .h3, .h3-standin {
+  font-size: $h3-font-size;
+
+  &.large, & span.large {
+    font-size: $h3-font-size + 2;
+  }
+
+  &.small, & span.small {
+    font-size: $h3-font-size - 2;
+  }
+
+  &.xsmall, & span.xsmall {
+    font-size: $h3-font-size - 4;
+  }
+
+  @include media-breakpoint-down(md) { 
+    font-size: 24px;
+
+    &.large, & span.large {
+      font-size: 24px + 2;
+    }
+
+    &.small, & span.small {
+      font-size: 24px - 2;
+    }
+
+    &.xsmall, & span.xsmall {
+      font-size: 24px - 4;
+    }
+  }
+
+  @include media-breakpoint-down(sm) { 
+    font-size: 20px;
+
+    &.large, & span.large {
+      font-size: 20px + 2;
+    }
+
+    &.small, & span.small {
+      font-size: 20px - 2;
+    }
+
+    &.xsmall, & span.xsmall {
+      font-size: 20px - 4;
+    }
+  }
+}
+
+h4, .h4, .h4-standin {
+  font-size: $h4-font-size;
+
+  &.large, & span.large {
+    font-size: $h4-font-size + 2;
+  }
+
+  &.small, & span.small {
+    font-size: $h4-font-size - 2;
+  }
+
+  &.xsmall, & span.xsmall {
+    font-size: $h4-font-size - 4;
+  }
+
+  @include media-breakpoint-down(md) { 
+    font-size: 20px;
+
+    &.large, & span.large {
+      font-size: 20px + 2;
+    }
+
+    &.small, & span.small {
+      font-size: 20px - 2;
+    }
+
+    &.xsmall, & span.xsmall {
+      font-size: 20px - 4;
+    }
+  }
+
+  @include media-breakpoint-down(sm) { 
+    font-size: 18px;
+
+    &.large, & span.large {
+      font-size: 18px + 2;
+    }
+
+    &.small, & span.small {
+      font-size: 18px - 2;
+    }
+
+    &.xsmall, & span.xsmall {
+      font-size: 18px - 4;
+    }
+  }
+}
+
+h5, .h5, .h5-standin {
+  font-size: $h5-font-size;
+
+  &.large, & span.large {
+    font-size: $h5-font-size + 2;
+  }
+
+  &.small, & span.small {
+    font-size: $h5-font-size - 2;
+  }
+
+  &.xsmall, & span.xsmall {
+    font-size: $h5-font-size - 4;
+  }
+
+  @include media-breakpoint-down(md) { 
+    font-size: 18px;
+
+    &.large, & span.large {
+      font-size: 18px + 2;
+    }
+
+    &.small, & span.small {
+      font-size: 18px - 2;
+    }
+
+    &.xsmall, & span.xsmall {
+      font-size: 18px - 4;
+    }
+  }
+
+  @include media-breakpoint-down(sm) { 
+    font-size: 16px;
+
+    &.large, & span.large {
+      font-size: 16px + 2;
+    }
+
+    &.small, & span.small {
+      font-size: 16px - 2;
+    }
+
+    &.xsmall, & span.xsmall {
+      font-size: 16px - 4;
+    }
+  }
+}
+
+h6, .h6, .h6-standin {
+  font-size: $h6-font-size;
+
+  &.large, & span.large {
+    font-size: $h6-font-size + 2;
+  }
+
+  &.small, & span.small {
+    font-size: $h6-font-size - 2;
+  }
+
+  &.xsmall, & span.xsmall {
+    font-size: $h6-font-size - 4;
+  }
+
+  @include media-breakpoint-down(md) { 
+    font-size: 16px;
+
+    &.large, & span.large {
+      font-size: 16px + 2;
+    }
+
+    &.small, & span.small {
+      font-size: 16px - 2;
+    }
+
+    &.xsmall, & span.xsmall {
+      font-size: 16px - 4;
+    }
+  }
+
+  @include media-breakpoint-down(sm) { 
+    font-size: 14px;
+
+    &.large, & span.large {
+      font-size: 14px + 2;
+    }
+
+    &.small, & span.small {
+      font-size: 14px - 2;
+    }
+
+    &.xsmall, & span.xsmall {
+      font-size: 14px - 4;
+    }
+  }
+}
+
+p {
+  @include media-breakpoint-down(sm) { 
+    font-size: 14px;
+
+    &.large, & span.large {
+      font-size: 14px + 2;
+    }
+
+    &.small, & span.small {
+      font-size: 14px - 2;
+    }
+
+    &.xsmall, & span.xsmall {
+      font-size: 14px - 4;
+    }
+  }
 }

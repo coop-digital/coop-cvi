@@ -115,12 +115,12 @@ $mobile-width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
+  font-size: $font-size-base;
 }
 
 .coop-nav-member__label {
   font-weight: $font-weight-medium;
-  font-size: 1.3rem;
+  font-size: $font-size-base;
   margin-left: 14px;
 }
 
@@ -156,7 +156,7 @@ $mobile-width: 80%;
   .coop-global-nav__close {
     display: flex;
     padding: 0 0 0 25px;
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-right: auto;
     color: #fff;
   }
@@ -180,6 +180,111 @@ $mobile-width: 80%;
 .coop-context-nav {
   background-color:  $gray-200;
   height: 49px;
+  position: relative;
+}
+
+.dropdown-menu {
+  background: $nav-gray;
+  padding: 20px;
+  display: none;
+
+  @include media-breakpoint-up(md) { 
+    position: absolute;
+    width: 100%;
+    top: 49px;
+    left: 0;
+    z-index: 100;
+  }
+
+  a {
+    display: block;
+    color: $black;
+
+    &:hover {
+      color: $gray-800;
+    }
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .coop-nav-spacing {
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    margin-bottom: 10px;
+  }
+}
+
+.coop-sub-nav {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .coop-sub-nav__link {
+    clear: left;
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+
+    &.active {
+      @extend .coop-icon-arrow-right-after;
+
+      color: $black;
+      font-weight: 600;
+      text-decoration: none;
+
+      &:after {
+        margin-left: 15px;
+      }
+
+      @include media-breakpoint-down(md) {
+        padding-bottom: 20px;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      float: left;
+    }
+  }
+
+  .sub-nav {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .sub-nav {
+      float: right;
+      background: $nav-gray;
+      position: absolute;
+      right: 0;
+
+      .col-12 {
+        display: block;
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    height: auto !important;    
+  }
+}
+
+.coop-context-nav__item {
+  @include media-breakpoint-up(md) { 
+    &:hover {
+      .dropdown-menu {
+        display: block;
+      }
+    }
+  }
 }
 
 .coop-context-nav__list {
@@ -225,6 +330,7 @@ $mobile-width: 80%;
     top: $site-nav-height;
     left: 0;
     height: 100%;
+    padding-bottom: 60px;
     width: $mobile-width;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -300,14 +406,14 @@ $mobile-width: 80%;
 }
 
 .coop-site-nav__link-name {
-  font-size: 1.5rem;
+  font-size: $font-size-base;
   margin-left: 12px;
   text-transform: uppercase;
   font-weight: 600;
 }
 
 .coop-site-nav__link-icon {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
 }
 
 .coop-site-nav__close-wrap,
@@ -391,16 +497,16 @@ $mobile-width: 80%;
 
   .coop-site-nav__mobile-toggle {
     margin-right: 25px;
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
   .coop-site-nav__mobile-search {
     margin-right: 25px;
-    font-size: 2.4rem;
+    font-size: 1.6rem;
   }
 
   .coop-site-nav__link-icon {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
   }
 
   .coop-site-nav__item {
@@ -421,7 +527,7 @@ $mobile-width: 80%;
   padding: 0 15px 0 50px;
   border: 0 solid #eee;
   border-left-width: 1px;
-  font-size: 1.4rem;
+  font-size: $font-size-base;
 
   &:focus {
     outline: 0;
@@ -438,7 +544,7 @@ $mobile-width: 80%;
   left: 15px;
   opacity: .5;
   pointer-events: none;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
 }
 
 @media (max-width: map-get($grid-breakpoints, "md")) {

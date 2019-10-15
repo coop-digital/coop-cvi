@@ -1,25 +1,74 @@
-$white:    #fff;
-$gray-100: #F8F7F4;
-$gray-200: #EBEBEB;
-$gray-300: #dee2e6;
-$gray-400: #CCCCCC;
-$gray-500: #adb5bd;
-$gray-600: #8E8E8E;
-$gray-700: #495057;
-$gray-800: #333333;
-$gray-900: #222222;
-$black:    #000;
+$white:       #fff !default;
+$gray-100:    #F8F7F4 !default;
+$gray-200:    #EBEBEB !default;
+$gray-300:    #dee2e6 !default;
+$gray-400:    #CCCCCC !default;
+$gray-500:    #adb5bd !default;
+$gray-600:    #8E8E8E !default;
+$gray-700:    #495057 !default;
+$gray-800:    #333333 !default;
+$gray-900:    #222222 !default;
+$black:       #000 !default;
+$nav-gray:	  #f6f6f6 !default;
 
-$blue:    #7DAEDB;
-$indigo:  #5A6EAE;
-$purple:  #374B91;
-$pink:    #B47378;
-$red:     #8C1419;
-$orange:  #DB951E;
-$yellow:  #FFE65F;
-$green:   #73AE5F;
-$teal:    #73B8BD;
-$cyan:    #4BA5AA;
+$blue:        #7DAEDB !default;
+$indigo:      #5A6EAE !default;
+$purple:      #374B91 !default;
+$pink:        #B47378 !default;
+$red:         #8C1419 !default;
+$orange:      #DB951E !default;
+$yellow:      #FFE65F !default;
+$green:       #73AE5F !default;
+$teal:        #73B8BD !default;
+$cyan:        #4BA5AA !default;
+$olive:	      #90AE3C !default;
+$redwine:     #8C1419 !default;
+$coconut:     #9A867D !default;
+  
+$bread-1:     #B9780F !default;
+$bread-2:     #EBC369 !default;
+$bread-3:     #F5DCA5 !default;
+$bread-4:     #F5EBD7 !default;
+
+$mustard-1:   #F5D74B !default;
+$mustard-2:   #FFEB96 !default;
+$mustard-3:   #FFF0BE !default;
+$mustard-4:   #FFF5DC !default;
+
+$olive-1:     #7D9B2D !default;
+$olive-2:     #C8DC96 !default;
+$olive-3:     #D7E1B4 !default;
+$olive-4:     #E1EBD2 !default;
+
+$apple-1:     #559641 !default;
+$apple-2:     #AFCD88 !default;
+$apple-3:     #D2E1C8 !default;
+$apple-4:     #E6EBE6 !default;
+
+$gum-1:       #4BA5AA !default;
+$gum-2:       #A0CDD2 !default;
+$gum-3:       #CDE1E6 !default;
+$gum-4:       #E6F0F0 !default;
+
+$milk-1:      #558CBE !default;
+$milk-2:      #B9D4F2 !default;
+$milk-3:      #CDE1F5 !default;
+$milk-4:      #E1EBFA !default;
+
+$blueberry-1: #374B91 !default;
+$blueberry-2: #A0AAD7 !default;
+$blueberry-3: #CDD2EB !default;
+$blueberry-4: #E6E6F5 !default;
+
+$redwine-1:   #690A0C !default;
+$redwine-2:   #B47378 !default;
+$redwine-3:   #E6CDCD !default;
+$redwine-4:   #F0E6E6 !default;
+
+$coconut-1:   #7D695F !default;
+$coconut-2:   #C3B4AA !default;
+$coconut-3:   #DCD7C8 !default;
+$coconut-4:   #EBEBE1 !default;
 
 $primary:       #C31414;
 $secondary:     $green;
@@ -30,45 +79,55 @@ $danger:        #EF0D0D;
 $light:         $gray-100;
 $dark:          $gray-800;
 
-$color-coconut-3: #EBEBE1;
+$color-coconut-3: #EBEBE1 !default;
 
-$body-bg:                   $white;
-$body-color:                $gray-800;
+$body-bg:                   $white !default;
+$body-color:                $gray-800 !default;
 
-$link-color:                              $primary;
-$link-decoration:                         none;
-$link-hover-color:                        darken($link-color, 25%);
-$link-hover-decoration:                   none;
+$link-color:                  $primary !default;
+$link-decoration:             none !default;
+$link-hover-color:            darken($link-color, 25%) !default;
+$link-hover-decoration:       none !default;
 
-$hover-opacity:               0.7;
+$hover-opacity:               0.7 !default;
 
-$grid-columns:                12;
-$grid-gutter-width:           32px;
+$grid-columns:                12 !default;
+$grid-gutter-width:           32px !default;
 
 $border-radius:               .5rem;
 $border-radius-lg:            .5rem;
 $border-radius-sm:            .5rem;
 
-$font-family-sans-serif:      "COOP", Arial, sans-serif;
+$font-family-sans-serif:      "COOP", 'Montserrat', Arial, sans-serif;
 $font-family-base:            $font-family-sans-serif;
 
-$font-size-base:              1.6rem;
-$line-height-base:            1.5;
+$font-size-base:              1rem;
+$line-height-base:            1.5 !default;
 
-$font-weight-medium:          500;
-$font-weight-semibold:        600;
+$font-weight-medium:          500 !default;
+$font-weight-semibold:        600 !default;
 
-$h1-font-size:                $font-size-base * 2.5;
-$h2-font-size:                $font-size-base * 2;
-$h3-font-size:                $font-size-base * 1.75;
-$h4-font-size:                $font-size-base * 1.5;
-$h5-font-size:                $font-size-base * 1.25;
+$h1-font-size:                48px;
+$h2-font-size:                42px;
+$h3-font-size:                36px;
+$h4-font-size:                24px;
+$h5-font-size:                20px;
 $h6-font-size:                $font-size-base;
 
-$icomoon-font-path:           "fonts/coop-icons/fonts";
+$headings-font-weight:        700;
+
+$icomoon-font-path:           "fonts/coop-icons/fonts" !default;
 
 $site-nav-height:             60px;
 $global-nav-height:           36px;
 
 $z-index-backdrop: 100000;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
 
