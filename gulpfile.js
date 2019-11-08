@@ -1,4 +1,5 @@
 const gulp = require('gulp')
+const { series } = require('gulp');
 const { watch } = require('gulp')
 const rename = require('gulp-rename')
 const prefix = require('gulp-autoprefixer')
@@ -37,6 +38,8 @@ function copyLogos() {
     }))
     .pipe(gulp.dest('./dist/'))
 }
+
+exports.build = series(css, copyFonts, copyLogos)
 
 exports.default = () => {
   watch('./src/sass/**/*.scss', css);

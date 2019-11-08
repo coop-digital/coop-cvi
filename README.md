@@ -3,18 +3,28 @@
 ### *See examples and how to use [here](https://coop-digital.github.io/coop-cvi/).*
 
 ### Table of content
-[Setup locally](#setup-locally)  
-[Extend Bootstrap](#extend-bootstrap)  
-[Styleguide](#styleguide)  
+[Setup locally](#setup-locally)
+[Extend Bootstrap](#extend-bootstrap)
+[Styleguide](#styleguide)
 
 ## Setup locally
 
 #### Local build
 
+Install gulp
 ```
   npm i
   npm i gulp-cli -g
+```
+
+Watch and build on file change
+```
   gulp
+```
+
+Build once
+```
+  gulp build
 ```
 
 #### Run local server to include in local projects
@@ -39,7 +49,7 @@ Run `gulp` to build extended version.
 
 ## Styleguide
 
-Please follow this styleguide when developing frontend projects for Coop. Will ensure maintainability and reusability across projects. 
+Please follow this styleguide when developing frontend projects for Coop. Will ensure maintainability and reusability across projects.
 
 ### HTML
 
@@ -49,21 +59,21 @@ Please follow this styleguide when developing frontend projects for Coop. Will e
 
 ### CSS
 
-* Mobile first 
+* Mobile first
 * Preprocessing with Sass
-* BEM-syntax 
+* BEM-syntax
 * Flexbox for layout
 * Keep a flat CSS-structure and keep SASS-nesting to a minimum
 * Use this CSS-framework as styling basis
-* Optional: extend with Bootstrap 4 elements 
+* Optional: extend with Bootstrap 4 elements
 
 ### Javascript
 
 #### Complex UIs
 
 * ReactJS
-* JSX for templating 
-* ES6-syntax 
+* JSX for templating
+* ES6-syntax
 * Webpack for bundling
 * Jest for testing
 * Optional: State management with Redux + Redux Saga
@@ -77,8 +87,8 @@ Please follow this styleguide when developing frontend projects for Coop. Will e
 
 Use Analytics to identify most used Browser for the website you're developing for.
 
-Rule of thumb: 
-* IE11 and graceful degradation on IE10 
+Rule of thumb:
+* IE11 and graceful degradation on IE10
 * Latest 3 versions of Safari, Chrome, iOS Safari, Android Chrome, Edge, and Firefox
 
 ___

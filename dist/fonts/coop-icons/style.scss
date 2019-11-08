@@ -27,76 +27,212 @@
 
 .coop-icon-pin {
   &:before {
+    @extend .coop-icon;
+    
     content: $coop-icon-pin; 
   }
 }
 .coop-icon-profile {
   &:before {
+    @extend .coop-icon;
+    
     content: $coop-icon-profile; 
   }
 }
 .coop-icon-burger {
   &:before {
+    @extend .coop-icon;
+    
     content: $coop-icon-burger; 
   }
 }
 .coop-icon-heart {
   &:before {
+    @extend .coop-icon;
+    
     content: $coop-icon-heart; 
   }
 }
 .coop-icon-search {
   &:before {
+    @extend .coop-icon;
+    
     content: $coop-icon-search; 
   }
 }
 .coop-icon-eye-off {
   &:before {
+    @extend .coop-icon;
+    
     content: $coop-icon-eye-off; 
   }
 }
 .coop-icon-eye {
   &:before {
+    @extend .coop-icon;
+    
     content: $coop-icon-eye; 
   }
 }
 .coop-icon-checkmark {
   &:before {
+    @extend .coop-icon;
+    
     content: $coop-icon-checkmark; 
   }
 }
 .coop-icon-arrow-down {
   &:before {
+    @extend .coop-icon;
+    
     content: $coop-icon-arrow-down; 
   }
 }
 .coop-icon-arrow-left {
   &:before {
+    @extend .coop-icon;
+    
     content: $coop-icon-arrow-left; 
   }
 }
 .coop-icon-arrow-right {
   &:before {
+    @extend .coop-icon;
+    
     content: $coop-icon-arrow-right; 
   }
 }
 .coop-icon-arrow-up {
   &:before {
+    @extend .coop-icon;
+    
     content: $coop-icon-arrow-up; 
   }
 }
 .coop-icon-close {
   &:before {
+    @extend .coop-icon;
+    
     content: $coop-icon-close; 
   }
 }
 .coop-icon-plus {
   &:before {
+    @extend .coop-icon;
+    
     content: $coop-icon-plus; 
   }
 }
 .coop-icon-trash {
   &:before {
+    @extend .coop-icon;
+    
+    content: $coop-icon-trash; 
+  }
+}
+
+.coop-icon-pin-after {
+  &:after {
+    @extend .coop-icon;
+    
+    content: $coop-icon-pin; 
+  }
+}
+.coop-icon-profile-after {
+  &:after {
+    @extend .coop-icon;
+    
+    content: $coop-icon-profile; 
+  }
+}
+.coop-icon-burger-after {
+  &:after {
+    @extend .coop-icon;
+    
+    content: $coop-icon-burger; 
+  }
+}
+.coop-icon-heart-after {
+  &:after {
+    @extend .coop-icon;
+    
+    content: $coop-icon-heart; 
+  }
+}
+.coop-icon-search-after {
+  &:after {
+    @extend .coop-icon;
+    
+    content: $coop-icon-search; 
+  }
+}
+.coop-icon-eye-off-after {
+  &:after {
+    @extend .coop-icon;
+    
+    content: $coop-icon-eye-off; 
+  }
+}
+.coop-icon-eye-after {
+  &:after {
+    @extend .coop-icon;
+    
+    content: $coop-icon-eye; 
+  }
+}
+.coop-icon-checkmark-after {
+  &:after {
+    @extend .coop-icon;
+    
+    content: $coop-icon-checkmark; 
+  }
+}
+.coop-icon-arrow-down-after {
+  &:after {
+    @extend .coop-icon;
+    
+    content: $coop-icon-arrow-down; 
+  }
+}
+.coop-icon-arrow-left-after {
+  &:after {
+    @extend .coop-icon;
+    
+    content: $coop-icon-arrow-left; 
+  }
+}
+.coop-icon-arrow-right-after {
+  &:after {
+    @extend .coop-icon;
+    
+    content: $coop-icon-arrow-right; 
+  }
+}
+.coop-icon-arrow-up-after {
+  &:after {
+    @extend .coop-icon;
+    
+    content: $coop-icon-arrow-up; 
+  }
+}
+.coop-icon-close-after {
+  &:after {
+    @extend .coop-icon;
+    
+    content: $coop-icon-close; 
+  }
+}
+.coop-icon-plus-after {
+  &:after {
+    @extend .coop-icon;
+    
+    content: $coop-icon-plus; 
+  }
+}
+.coop-icon-trash-after {
+  &:after {
+    @extend .coop-icon;
+    
     content: $coop-icon-trash; 
   }
 }
