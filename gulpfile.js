@@ -8,12 +8,20 @@ let sass = require('gulp-sass')
 
 sass.compiler = require('node-sass')
 
-function css() {
-  return gulp.src('./src/sass/styles.scss')
+function css(fileName) {
+  return gulp.src(`./src/sass/${fileName}.scss`)
     .pipe(sass().on('error', sass.logError))
     .pipe(prefix())
     .pipe(cleanCSS())
     .pipe(gulp.dest('./dist/'))
+}
+
+function cssFull() {
+  return css('styles')
+}
+
+function cssSlim() {
+  return css('styles-slim')
 }
 
 function copyFonts() {
@@ -39,10 +47,10 @@ function copyLogos() {
     .pipe(gulp.dest('./dist/'))
 }
 
-exports.build = series(css, copyFonts, copyLogos)
+exports.build = series(cssFull, cssSlim, copyFonts, copyLogos)
 
 exports.default = () => {
-  watch('./src/sass/**/*.scss', css);
+  watch('./src/sass/**/*.scss', cssFull);
   watch('./src/fonts/**/*', copyFonts);
   watch('./src/logos/**/*', copyLogos);
 };

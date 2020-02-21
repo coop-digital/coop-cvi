@@ -1,0 +1,6 @@
+%standard-focus {
+  &:focus {
+    --focus-color:  #{$primary};
+    outline-color: var(--focus-color);
+  }
+}

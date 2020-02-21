@@ -4,6 +4,7 @@
 ;
 
 @import 'coop-variables';
+@import 'coop-extends';
 
 @import
   'node_modules/bootstrap/scss/mixins',
@@ -15,13 +16,6 @@
   'node_modules/bootstrap/scss/utilities/display',
   'node_modules/bootstrap/scss/input-group'
 ;
-
-%standard-focus {
-  &:focus {
-    --focus-color:  #{$primary};
-    outline-color: var(--focus-color);
-  }
-}
 
 @import '../fonts/coop-icons/style.scss';
 @import 'coop-buttons';
