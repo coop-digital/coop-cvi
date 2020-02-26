@@ -72,7 +72,7 @@
 }
 
 .coop-form-note {
-  font-size: $font-size-base - 2;
+  font-size: $font-size-base - 0.2;
   margin: -15px 3px 20px;
   color: $gray-600;
 }
@@ -91,7 +91,7 @@
 
 .coop-password-input__toggle {
   position: absolute;
-  font-size: $font-size-base - 2;
+  font-size: $font-size-base - 0.2;
   padding: 5px 12px;
   right: 1px;
   top: 1px;
@@ -136,6 +136,7 @@
     border-radius: 5px;
     background: #fff;
     margin-left: 0;
+    box-sizing: border-box;
   }
 
   &:checked {
@@ -215,7 +216,7 @@
   margin: -10px 0 20px;
   border-radius: $border-radius;
   text-align: center;
-  font-size: $font-size-base - 2;
+  font-size: $font-size-base - 0.2;
   line-height: 1.8rem;
   position: relative;
   background-color: lighten($danger, 35%);
