@@ -85,8 +85,6 @@ Please follow this styleguide when developing frontend projects for Coop. Will e
 
 ### Browser support
 
-Use Analytics to identify most used Browser for the website you're developing for.
-
 Rule of thumb:
 * IE11 and graceful degradation on IE10
 * Latest 3 versions of Safari, Chrome, iOS Safari, Android Chrome, Edge, and Firefox
