@@ -188,7 +188,7 @@ $mobile-width: 80%;
   padding: 20px;
   display: none;
 
-  @include media-breakpoint-up(md) { 
+  @include media-breakpoint-up(md) {
     position: absolute;
     width: 100%;
     top: 49px;
@@ -232,7 +232,7 @@ $mobile-width: 80%;
     padding: 5px 0;
 
     &.active {
-      @extend .coop-icon-arrow-right-after;
+      @extend .coop-icon-arrow-right;
 
       color: $black;
       font-weight: 600;
@@ -273,12 +273,12 @@ $mobile-width: 80%;
     }
   }
   @include media-breakpoint-down(md) {
-    height: auto !important;    
+    height: auto !important;
   }
 }
 
 .coop-context-nav__item {
-  @include media-breakpoint-up(md) { 
+  @include media-breakpoint-up(md) {
     &:hover {
       .dropdown-menu {
         display: block;
