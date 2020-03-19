@@ -523,10 +523,10 @@ $mobile-width: 80%;
 
 .coop-nav-search__input {
   width: 100%;
-  height: $site-nav-height;
+  height: $site-nav-height - 20px;
   padding: 0 15px 0 50px;
-  border: 0 solid #eee;
-  border-left-width: 1px;
+  border: 1px solid #ccc;
+  border-radius: $border-radius;
   font-size: $font-size-base;
 
   &:focus {
@@ -540,11 +540,11 @@ $mobile-width: 80%;
 
 .coop-nav-search__icon {
   position: absolute;
-  top: 19px;
+  top: 10px;
   left: 15px;
   opacity: .5;
   pointer-events: none;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 @media (max-width: map-get($grid-breakpoints, "md")) {

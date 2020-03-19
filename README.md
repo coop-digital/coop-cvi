@@ -89,6 +89,9 @@ Rule of thumb:
 * IE11 and graceful degradation on IE10
 * Latest 3 versions of Safari, Chrome, iOS Safari, Android Chrome, Edge, and Firefox
 
+### Notes
+
+If fonts need updating - including icon font - please note that font url points to external CDN. So release to CDN to see changes in localhost. The reason is that external users won't have to host fonts themselves if the font path is absolute.
 ___
 
 **All rights reserved Coop Danmark A/S**

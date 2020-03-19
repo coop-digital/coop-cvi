@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'coop-icons';
   src:
-    url('fonts/coop-icons.ttf?sy8jyq') format('truetype'),
-    url('fonts/coop-icons.woff?sy8jyq') format('woff'),
-    url('fonts/coop-icons.svg?sy8jyq#coop-icons') format('svg');
+    url('fonts/coop-icons.ttf?pfcpeu') format('truetype'),
+    url('fonts/coop-icons.woff?pfcpeu') format('woff'),
+    url('fonts/coop-icons.svg?pfcpeu#coop-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.coop-icon-catalogue:before {
+  content: "\e910";
+}
 .coop-icon-settings:before {
   content: "\e90f";
 }

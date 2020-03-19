@@ -94,9 +94,9 @@ $hover-opacity:               0.7 !default;
 $grid-columns:                12 !default;
 $grid-gutter-width:           32px !default;
 
-$border-radius:               .5rem;
-$border-radius-lg:            .5rem;
-$border-radius-sm:            .5rem;
+$border-radius:               5px;
+$border-radius-lg:            5px;
+$border-radius-sm:            5px;
 
 $font-family-sans-serif:      "COOP", Verdana, sans-serif;
 $font-family-base:            $font-family-sans-serif;
@@ -116,10 +116,7 @@ $h6-font-size:                $font-size-base;
 
 $headings-font-weight:        700;
 
-$icomoon-font-path:           "https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/fonts/coop-icons/fonts" !default;
-
-
-
+$icomoon-font-path:           "https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@1.0.8/dist/fonts/coop-icons/fonts" !default;
 
 $site-nav-height:             60px;
 $global-nav-height:           36px;
