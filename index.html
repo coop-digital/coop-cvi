@@ -87,7 +87,7 @@
 
         <pre class="example-code">
           <xmp>
-            <link href="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v1.0.8/dist/styles.css" rel="stylesheet">
+            <link href="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v1.0.9/dist/styles.css" rel="stylesheet">
           </xmp>
         </pre>
 
@@ -97,7 +97,7 @@
 
         <pre class="example-code">
           <xmp>
-            <link href="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v1.0.8/dist/styles-slim.css" rel="stylesheet">
+            <link href="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v1.0.9/dist/styles-slim.css" rel="stylesheet">
           </xmp>
         </pre>
 
@@ -591,15 +591,37 @@
       </section>
 
       <section>
-          <h2 id="icons" class="index">Icons</h2>
+        <h2 id="icons" class="index">Icons</h2>
 
-          <p>
-            This project includes a font with generic icons to be used in HTML.
-            More icons will be added on request.
-          </p>
+        <p>
+          This project includes a font with generic icons to be used in HTML.
+          More icons will be added on request.
+        </p>
 
-          <h3>
-            <div class="icon-list">
+        <h3>
+          <div class="icon-list">
+            <i class="coop-icon coop-icon-checkmark"></i>
+            <i class="coop-icon coop-icon-burger"></i>
+            <i class="coop-icon coop-icon-search"></i>
+            <i class="coop-icon coop-icon-close"></i>
+            <i class="coop-icon coop-icon-plus"></i>
+            <i class="coop-icon coop-icon-arrow-up"></i>
+            <i class="coop-icon coop-icon-arrow-down"></i>
+            <i class="coop-icon coop-icon-arrow-left"></i>
+            <i class="coop-icon coop-icon-arrow-right"></i>
+            <i class="coop-icon coop-icon-eye"></i>
+            <i class="coop-icon coop-icon-eye-off"></i>
+            <i class="coop-icon coop-icon-heart"></i>
+            <i class="coop-icon coop-icon-trash"></i>
+            <i class="coop-icon coop-icon-profile"></i>
+            <i class="coop-icon coop-icon-pin"></i>
+            <i class="coop-icon coop-icon-settings"></i>
+            <i class="coop-icon coop-icon-catalogue"></i>
+          </div>
+        </h3>
+
+        <pre class="example-code">
+          <xmp>
               <i class="coop-icon coop-icon-checkmark"></i>
               <i class="coop-icon coop-icon-burger"></i>
               <i class="coop-icon coop-icon-search"></i>
@@ -616,713 +638,327 @@
               <i class="coop-icon coop-icon-profile"></i>
               <i class="coop-icon coop-icon-pin"></i>
               <i class="coop-icon coop-icon-settings"></i>
-            </div>
-          </h3>
+              <i class="coop-icon coop-icon-catalogue"></i>
+          </xmp>
+        </pre>
 
-          <pre class="example-code">
-            <xmp>
-                <i class="coop-icon coop-icon-checkmark"></i>
-                <i class="coop-icon coop-icon-burger"></i>
-                <i class="coop-icon coop-icon-search"></i>
-                <i class="coop-icon coop-icon-close"></i>
-                <i class="coop-icon coop-icon-plus"></i>
-                <i class="coop-icon coop-icon-arrow-up"></i>
-                <i class="coop-icon coop-icon-arrow-down"></i>
-                <i class="coop-icon coop-icon-arrow-left"></i>
-                <i class="coop-icon coop-icon-arrow-right"></i>
-                <i class="coop-icon coop-icon-eye"></i>
-                <i class="coop-icon coop-icon-eye-off"></i>
-                <i class="coop-icon coop-icon-heart"></i>
-                <i class="coop-icon coop-icon-trash"></i>
-                <i class="coop-icon coop-icon-profile"></i>
-                <i class="coop-icon coop-icon-pin"></i>
-                <i class="coop-icon coop-icon-settings"></i>
-            </xmp>
-          </pre>
+        <p>See full list in <a href="src/fonts/coop-icons/style.css">icon file</a></p>
 
-          <p>See full list in <a href="src/fonts/coop-icons/style.css">icon file</a></p>
+      </section>
 
-        </section>
+      <section>
+        <h2 id="logos" class="index">Logos</h2>
 
-        <section>
-          <h2 id="logos" class="index">Logos</h2>
+        <p>
+          Use Coop logos directly from CDN.
+        </p>
 
-          <p>
-            Use Coop logos directly from CDN.
-          </p>
+        <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v1.0.9/dist/logo/coop/coop-red.svg" style="width: 250px;" alt="Logo">
 
-          <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v1.0.8/dist/logo/coop/coop-red.svg" style="width: 250px;" alt="Logo">
+        <p>
+          Find the logo you want to use
+          <a href="https://github.com/coop-digital/coop-cvi/tree/master/dist/logo">here</a>,
+          and build the logo path like this:
+        </p>
 
-          <p>
-            Find the logo you want to use
-            <a href="https://github.com/coop-digital/coop-cvi/tree/master/dist/logo">here</a>,
-            and build the logo path like this:
-          </p>
+        <pre class="example-code">
+          <xmp>
+            Gitub path for coop-red.svg:
+            https://github.com/coop-digital/coop-cvi/blob/master/dist/logo/coop/coop-red.svg
 
-          <pre class="example-code">
-            <xmp>
-              Gitub path for coop-red.svg:
-              https://github.com/coop-digital/coop-cvi/blob/master/dist/logo/coop/coop-red.svg
+            CDN base path:
+            https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v1.0.9/dist/
 
-              CDN base path:
-              https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v1.0.8/dist/
+            CDN + Github to generate path for coop-red.svg:
+            https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v1.0.9/dist/logo/coop/coop-red.svg
 
-              CDN + Github to generate path for coop-red.svg:
-              https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v1.0.8/dist/logo/coop/coop-red.svg
+            HTML tag:
+            <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v1.0.9/dist/logo/coop/coop-red.svg" alt="Logo">
+          </xmp>
+        </pre>
 
-              HTML tag:
-              <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi@v1.0.8/dist/logo/coop/coop-red.svg" alt="Logo">
-            </xmp>
-          </pre>
+        <p>Omit version number if you want to let the logo update automatically when changed.</p>
 
-          <p>Omit version number if you want to let the logo update automatically when changed.</p>
+        <pre class="example-code">
+          <xmp>
+            <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/coop/coop-red.svg" alt="Logo">
+          </xmp>
+        </pre>
+      </section>
 
-          <pre class="example-code">
-            <xmp>
-              <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/coop/coop-red.svg" alt="Logo">
-            </xmp>
-          </pre>
-        </section>
+      <section>
+        <h2 id="navigation" class="index">Navigation</h2>
 
-        <section>
-          <h2 id="navigation" class="index">Navigation</h2>
+        <p>Coop navigation has three levels: global, site and context.</p>
 
-          <p>Coop navigation has three levels: global, site and context.</p>
+        <p>
+          <strong>Global nav</strong> should contain links that go accross Coop sites,
+          such as signup, login and customer service contact
+        </p>
 
-          <p>
-            <strong>Global nav</strong> should contain links that go accross Coop sites,
-            such as signup, login and customer service contact
-          </p>
+        <p>
+          <strong>Site nav</strong> contains the most important site specific links and
+          features, such as search
+        </p>
 
-          <p>
-            <strong>Site nav</strong> contains the most important site specific links and
-            features, such as search
-          </p>
+        <p style="margin-bottom: 50px;">
+          <strong>Context nav</strong> is the traditional site specific page navigation
+        </p>
 
-          <p style="margin-bottom: 50px;">
-            <strong>Context nav</strong> is the traditional site specific page navigation
-          </p>
-
-          <header id="coop-nav" class="coop-nav ">
-            <!-- GLOBAL NAVIGATION -->
-            <div class="coop-global-nav">
-              <div id="coop-nav-hide" class="coop-global-nav__close">
-                <i class="coop-icon coop-icon-close"></i>
-              </div>
-
-              <ul class="coop-nav__list coop-global-nav__list">
-                <li class="coop-global-nav__item">
-                  <a href="https://coop.dk/kundeservice" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Kundeservice</span></span></a>
-                </li>
-                <li class="coop-global-nav__item">
-                  <a href="https://mad.coop.dk/" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Dagligvarer fra Coop.dk MAD</span></span></a>
-                </li>
-              </ul>
-
-              <div class='coop-global-nav__member coop-nav-member'>
-                <a href="https://medlem.coop.dk/" class='coop-nav-member__signup'>
-                  <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/coop-medlem-white.png" class='coop-nav-member__logo' alt />
-                </a>
-                <a href="#" class='coop-nav-member__login'>
-                  <div class="coop-nav-member__icon">
-                    <i class="coop-icon coop-icon-profile"></i>
-                  </div>
-
-                  <span class="coop-nav-member__label">
-                    Log ind
-                  </span>
-                </a>
-              </div>
+        <header id="coop-nav" class="coop-nav ">
+          <!-- GLOBAL NAVIGATION -->
+          <div class="coop-global-nav">
+            <div id="coop-nav-hide" class="coop-global-nav__close">
+              <i class="coop-icon coop-icon-close"></i>
             </div>
 
-            <!-- SITE NAVIGATION -->
-            <div class="coop-site-nav">
-              <div class="coop-site-nav__inner  ">
-                <div class="coop-site-nav__mobile">
-                  <i class="coop-icon coop-icon-burger coop-site-nav__mobile-toggle" id="coop-nav-show"></i>
-                  <i class="coop-icon coop-icon-search coop-site-nav__mobile-search"></i>
+            <ul class="coop-nav__list coop-global-nav__list">
+              <li class="coop-global-nav__item">
+                <a href="https://coop.dk/kundeservice" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Kundeservice</span></span></a>
+              </li>
+              <li class="coop-global-nav__item">
+                <a href="https://mad.coop.dk/" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Dagligvarer fra Coop.dk MAD</span></span></a>
+              </li>
+            </ul>
+
+            <div class='coop-global-nav__member coop-nav-member'>
+              <a href="https://medlem.coop.dk/" class='coop-nav-member__signup'>
+                <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/coop-medlem-white.png" class='coop-nav-member__logo' alt />
+              </a>
+              <a href="#" class='coop-nav-member__login'>
+                <div class="coop-nav-member__icon">
+                  <i class="coop-icon coop-icon-profile"></i>
                 </div>
 
-                <a href="/" class="coop-site-nav__logo-wrap">
-                  <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/coop/coop-red.svg" alt="Logo" class="coop-site-nav__logo-image">
-                </a>
-
-                <div class="coop-site-nav__search">
-                  <div class="coop-nav-search">
-                    <i class="coop-icon coop-icon-search coop-nav-search__icon"></i>
-                    <input class="coop-nav-search__input" placeholder="Søg...">
-                  </div>
-                </div>
-
-                <ul class="coop-nav__list coop-site-nav__list">
-                  <li class="coop-site-nav__item">
-                    <a class="coop-nav__link coop-site-nav__link" href="#">
-                      <i class="coop-icon coop-icon-pin coop-site-nav__link-icon"></i>
-                      <div class="coop-site-nav__link-name">Find butik</div>
-                    </a>
-                  </li>
-
-                  <li class="coop-site-nav__item">
-                    <a class="coop-nav__link coop-site-nav__link" href="#">
-                      <i class="coop-icon coop-icon-catalogue coop-site-nav__link-icon"></i>
-                      <div class="coop-site-nav__link-name">Tilbudsavis</div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                <span class="coop-nav-member__label">
+                  Log ind
+                </span>
+              </a>
             </div>
+          </div>
 
-            <!-- CONTEXT NAVIGATION -->
-            <div class="coop-context-nav">
-              <ul class="coop-nav__list coop-context-nav__list">
-                <li class="coop-context-nav__item">
-                  <a href="#" class="coop-nav__link  coop-context-nav__link">
-                    <span class="coop-context-nav__link-name">Temaer</span>
+          <!-- SITE NAVIGATION -->
+          <div class="coop-site-nav">
+            <div class="coop-site-nav__inner  ">
+              <div class="coop-site-nav__mobile">
+                <i class="coop-icon coop-icon-burger coop-site-nav__mobile-toggle" id="coop-nav-show"></i>
+                <i class="coop-icon coop-icon-search coop-site-nav__mobile-search"></i>
+              </div>
+
+              <a href="/" class="coop-site-nav__logo-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/coop/coop-red.svg" alt="Logo" class="coop-site-nav__logo-image">
+              </a>
+
+              <div class="coop-site-nav__search">
+                <div class="coop-nav-search">
+                  <i class="coop-icon coop-icon-search coop-nav-search__icon"></i>
+                  <input class="coop-nav-search__input" placeholder="Søg...">
+                </div>
+              </div>
+
+              <ul class="coop-nav__list coop-site-nav__list">
+                <li class="coop-site-nav__item">
+                  <a class="coop-nav__link coop-site-nav__link" href="#">
+                    <i class="coop-icon coop-icon-pin coop-site-nav__link-icon"></i>
+                    <div class="coop-site-nav__link-name">Find butik</div>
                   </a>
-                  <div class="dropdown-menu">
-                    <div class="row">
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <h4>365 Økologisk</h4>
-                          <a href="#">365 hver dag</a>
-                          <a href="#">365 madinspiration</a>
-                          <a href="#">365 kød</a>
-                          <a href="#">365 mejeri</a>
-                          <a href="#">365 grønt & sager</a>
-                        </div>
-
-                        <div class="coop-nav-spacing">
-                          <h4>365 Økologisk</h4>
-                          <a href="#">365 hver dag</a>
-                          <a href="#">365 madinspiration</a>
-                          <a href="#">365 kød</a>
-                          <a href="#">365 mejeri</a>
-                          <a href="#">365 grønt & sager</a>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <h4>365 Økologisk</h4>
-                          <a href="#">365 hver dag</a>
-                          <a href="#">365 madinspiration</a>
-                          <a href="#">365 kød</a>
-                          <a href="#">365 mejeri</a>
-                          <a href="#">365 grønt & sager</a>
-                        </div>
-
-                        <div class="coop-nav-spacing">
-                          <h4>365 Økologisk</h4>
-                          <a href="#">365 hver dag</a>
-                          <a href="#">365 madinspiration</a>
-                          <a href="#">365 kød</a>
-                          <a href="#">365 mejeri</a>
-                          <a href="#">365 grønt & sager</a>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <h4>365 Økologisk</h4>
-                          <a href="#">365 hver dag</a>
-                          <a href="#">365 madinspiration</a>
-                          <a href="#">365 kød</a>
-                          <a href="#">365 mejeri</a>
-                          <a href="#">365 grønt & sager</a>
-                        </div>
-
-                        <div class="coop-nav-spacing">
-                          <h4>365 Økologisk</h4>
-                          <a href="#">365 hver dag</a>
-                          <a href="#">365 madinspiration</a>
-                          <a href="#">365 kød</a>
-                          <a href="#">365 mejeri</a>
-                          <a href="#">365 grønt & sager</a>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <h4>365 Økologisk</h4>
-                          <a href="#">365 hver dag</a>
-                          <a href="#">365 madinspiration</a>
-                          <a href="#">365 kød</a>
-                          <a href="#">365 mejeri</a>
-                          <a href="#">365 grønt & sager</a>
-                        </div>
-
-                        <div class="coop-nav-spacing">
-                          <h4>365 Økologisk</h4>
-                          <a href="#">365 hver dag</a>
-                          <a href="#">365 madinspiration</a>
-                          <a href="#">365 kød</a>
-                          <a href="#">365 mejeri</a>
-                          <a href="#">365 grønt & sager</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </li>
-                <li class="coop-context-nav__item">
-                  <a href="#" class="coop-nav__link coop-nav__link--is-current coop-context-nav__link--is-current coop-context-nav__link">
-                    <span class="coop-context-nav__link-name">Artikler</span>
+
+                <li class="coop-site-nav__item">
+                  <a class="coop-nav__link coop-site-nav__link" href="#">
+                    <i class="coop-icon coop-icon-catalogue coop-site-nav__link-icon"></i>
+                    <div class="coop-site-nav__link-name">Tilbudsavis</div>
                   </a>
-                  <div class="dropdown-menu">
-                    <div class="row">
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="coop-context-nav__item">
-                  <a href="#" class="coop-nav__link  coop-context-nav__link">
-                    <span><span class="coop-context-nav__link-name">Kategorier</span></span>
-                  </a>
-                  <div class="dropdown-menu">
-                    <div class="row">
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <h4>Inspiration</h4>
-                          <form>
-                            <label class="coop-label">Text input</label>
-                            <input type="text" class="coop-text-input" placeholder="Text input">
-
-                            <input type="text" class="coop-text-input" placeholder="Text input">
-
-                            <label class="coop-checkbox__label">
-                              <input class="coop-checkbox__input" type="checkbox" value="true">
-                              <span class="coop-checkbox__text">Disclaimer text</span>
-                            </label>
-
-                            <input type="submit" class="coop-button coop-button--wide" value="CTA">
-                            <p class="small">Afmeld nyhedsbrev</p>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="coop-context-nav__item">
-                  <a href="#" class="coop-nav__link  coop-context-nav__link">
-                    <span><span class="coop-context-nav__link-name">Om</span></span>
-                  </a>
-                  <div class="dropdown-menu coop-sub-nav">
-                    <ul>
-                      <li>
-                        <a class="coop-sub-nav__link active" href="#">Menu 1</a>
-                        <div class="sub-nav col-12 col-md-9 active">
-                          <div class="row">
-                            <div class="col-12 col-md-4">
-                              <div class="coop-nav-spacing">
-                                <img class="img-fluid" src="http://placehold.it/350x450">
-                                <input type="submit" class="coop-button coop-button--wide" value="CTA">
-                              </div>
-                            </div>
-                            <div class="col-12 col-md-4">
-                              <div class="coop-nav-spacing">
-                                <h4>365 Økologisk</h4>
-                                <a href="#">365 hver dag</a>
-                                <a href="#">365 madinspiration</a>
-                                <a href="#">365 kød</a>
-                                <a href="#">365 mejeri</a>
-                                <a href="#">365 grønt & sager</a>
-                              </div>
-
-                              <div class="coop-nav-spacing">
-                                <h4>365 Økologisk</h4>
-                                <a href="#">365 hver dag</a>
-                                <a href="#">365 madinspiration</a>
-                                <a href="#">365 kød</a>
-                                <a href="#">365 mejeri</a>
-                                <a href="#">365 grønt & sager</a>
-                              </div>
-                            </div>
-                            <div class="col-12 col-md-4">
-                              <div class="coop-nav-spacing">
-                                <h4>365 Økologisk</h4>
-                                <a href="#">365 hver dag</a>
-                                <a href="#">365 madinspiration</a>
-                                <a href="#">365 kød</a>
-                                <a href="#">365 mejeri</a>
-                                <a href="#">365 grønt & sager</a>
-                              </div>
-
-                              <div class="coop-nav-spacing">
-                                <h4>365 Økologisk</h4>
-                                <a href="#">365 hver dag</a>
-                                <a href="#">365 madinspiration</a>
-                                <a href="#">365 kød</a>
-                                <a href="#">365 mejeri</a>
-                                <a href="#">365 grønt & sager</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <a class="coop-sub-nav__link" href="#">Menu 2</a>
-                        <div class="sub-nav col-12 col-md-9">
-                          <div class="row">
-                            <div class="col-12 col-md-4">
-                              <div class="coop-nav-spacing">
-                                <img class="img-fluid" src="http://placehold.it/350x450">
-                                <input type="submit" class="coop-button coop-button--wide" value="CTA">
-                              </div>
-                            </div>
-                            <div class="col-12 col-md-4">
-                              <div class="coop-nav-spacing">
-                                <h4>365 Økologisk</h4>
-                                <p>Vi har gjort det nemt at vælge vin. Du skal bare vide, hvad du skal ha' at spise.</p>
-                              </a>
-                            </div>
-                            <div class="col-12 col-md-4">
-
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
                 </li>
               </ul>
             </div>
+          </div>
 
-            <script>
-              /* Toggle Mobile Navigation*/
-              document.getElementById('coop-nav-show').addEventListener("click", function(){
-                document.getElementById('coop-nav').classList.add('coop-nav--mobile-visible')
-              })
-
-              document.getElementById('coop-nav-hide').addEventListener("click", function(){
-                document.getElementById('coop-nav').classList.remove('coop-nav--mobile-visible')
-              })
-            </script>
-          </header>
-
-          <pre class="example-code">
-            <xmp>
-              <header id="coop-nav" class="coop-nav ">
-            <!-- GLOBAL NAVIGATION -->
-            <div class="coop-global-nav">
-              <div id="coop-nav-hide" class="coop-global-nav__close">
-                <i class="coop-icon coop-icon-close"></i>
-              </div>
-
-              <ul class="coop-nav__list coop-global-nav__list">
-                <li class="coop-global-nav__item">
-                  <a href="https://coop.dk/kundeservice" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Kundeservice</span></span></a>
-                </li>
-                <li class="coop-global-nav__item">
-                  <a href="https://mad.coop.dk/" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Dagligvarer fra Coop.dk MAD</span></span></a>
-                </li>
-              </ul>
-
-              <div class='coop-global-nav__member coop-nav-member'>
-                <a href="https://medlem.coop.dk/" class='coop-nav-member__signup'>
-                  <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/coop-medlem-white.png" class='coop-nav-member__logo' alt />
+          <!-- CONTEXT NAVIGATION -->
+          <div class="coop-context-nav">
+            <ul class="coop-nav__list coop-context-nav__list">
+              <li class="coop-context-nav__item">
+                <a href="#" class="coop-nav__link  coop-context-nav__link">
+                  <span class="coop-context-nav__link-name">Temaer</span>
                 </a>
-                <a href="#" class='coop-nav-member__login'>
-                  <div class="coop-nav-member__icon">
-                    <i class="coop-icon coop-icon-profile"></i>
-                  </div>
-
-                  <span class="coop-nav-member__label">
-                    Log ind
-                  </span>
-                </a>
-              </div>
-            </div>
-
-            <!-- SITE NAVIGATION -->
-            <div class="coop-site-nav">
-              <div class="coop-site-nav__inner  ">
-                <div class="coop-site-nav__mobile">
-                  <i class="coop-icon coop-icon-burger coop-site-nav__mobile-toggle" id="coop-nav-show"></i>
-                  <i class="coop-icon coop-icon-search coop-site-nav__mobile-search"></i>
-                </div>
-
-                <a href="/" class="coop-site-nav__logo-wrap">
-                  <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/coop/coop-red.svg" alt="Logo" class="coop-site-nav__logo-image">
-                </a>
-
-                <div class="coop-site-nav__search">
-                  <div class="coop-nav-search">
-                    <i class="coop-icon coop-icon-search coop-nav-search__icon"></i>
-                    <input class="coop-nav-search__input" placeholder="Søg...">
-                  </div>
-                </div>
-
-                <ul class="coop-nav__list coop-site-nav__list">
-                  <li class="coop-site-nav__item">
-                    <a class="coop-nav__link coop-site-nav__link" href="#">
-                      <i class="coop-icon coop-icon-pin coop-site-nav__link-icon"></i>
-                      <div class="coop-site-nav__link-name">Gemte</div>
-                    </a>
-                  </li>
-
-                  <li class="coop-site-nav__item">
-                    <a class="coop-nav__link coop-site-nav__link" href="#">
-                      <i class="coop-icon coop-icon-heart coop-site-nav__link-icon"></i>
-                      <div class="coop-site-nav__link-name">Gemte</div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- CONTEXT NAVIGATION -->
-            <div class="coop-context-nav">
-              <ul class="coop-nav__list coop-context-nav__list">
-                <li class="coop-context-nav__item">
-                  <a href="#" class="coop-nav__link  coop-context-nav__link">
-                    <span><span class="coop-context-nav__link-name">Temaer</span></span>
-                  </a>
-                  <div class="dropdown-menu">
-                    <div class="row">
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <h4>365 Økologisk</h4>
-                          <a href="#">365 hver dag</a>
-                          <a href="#">365 madinspiration</a>
-                          <a href="#">365 kød</a>
-                          <a href="#">365 mejeri</a>
-                          <a href="#">365 grønt & sager</a>
-                        </div>
-
-                        <div class="coop-nav-spacing">
-                          <h4>365 Økologisk</h4>
-                          <a href="#">365 hver dag</a>
-                          <a href="#">365 madinspiration</a>
-                          <a href="#">365 kød</a>
-                          <a href="#">365 mejeri</a>
-                          <a href="#">365 grønt & sager</a>
-                        </div>
+                <div class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-12 col-md-3">
+                      <div class="coop-nav-spacing">
+                        <h4>365 Økologisk</h4>
+                        <a href="#">365 hver dag</a>
+                        <a href="#">365 madinspiration</a>
+                        <a href="#">365 kød</a>
+                        <a href="#">365 mejeri</a>
+                        <a href="#">365 grønt & sager</a>
                       </div>
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <h4>365 Økologisk</h4>
-                          <a href="#">365 hver dag</a>
-                          <a href="#">365 madinspiration</a>
-                          <a href="#">365 kød</a>
-                          <a href="#">365 mejeri</a>
-                          <a href="#">365 grønt & sager</a>
-                        </div>
 
-                        <div class="coop-nav-spacing">
-                          <h4>365 Økologisk</h4>
-                          <a href="#">365 hver dag</a>
-                          <a href="#">365 madinspiration</a>
-                          <a href="#">365 kød</a>
-                          <a href="#">365 mejeri</a>
-                          <a href="#">365 grønt & sager</a>
-                        </div>
+                      <div class="coop-nav-spacing">
+                        <h4>365 Økologisk</h4>
+                        <a href="#">365 hver dag</a>
+                        <a href="#">365 madinspiration</a>
+                        <a href="#">365 kød</a>
+                        <a href="#">365 mejeri</a>
+                        <a href="#">365 grønt & sager</a>
                       </div>
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <h4>365 Økologisk</h4>
-                          <a href="#">365 hver dag</a>
-                          <a href="#">365 madinspiration</a>
-                          <a href="#">365 kød</a>
-                          <a href="#">365 mejeri</a>
-                          <a href="#">365 grønt & sager</a>
-                        </div>
-
-                        <div class="coop-nav-spacing">
-                          <h4>365 Økologisk</h4>
-                          <a href="#">365 hver dag</a>
-                          <a href="#">365 madinspiration</a>
-                          <a href="#">365 kød</a>
-                          <a href="#">365 mejeri</a>
-                          <a href="#">365 grønt & sager</a>
-                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <div class="coop-nav-spacing">
+                        <h4>365 Økologisk</h4>
+                        <a href="#">365 hver dag</a>
+                        <a href="#">365 madinspiration</a>
+                        <a href="#">365 kød</a>
+                        <a href="#">365 mejeri</a>
+                        <a href="#">365 grønt & sager</a>
                       </div>
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <h4>365 Økologisk</h4>
-                          <a href="#">365 hver dag</a>
-                          <a href="#">365 madinspiration</a>
-                          <a href="#">365 kød</a>
-                          <a href="#">365 mejeri</a>
-                          <a href="#">365 grønt & sager</a>
-                        </div>
 
-                        <div class="coop-nav-spacing">
-                          <h4>365 Økologisk</h4>
-                          <a href="#">365 hver dag</a>
-                          <a href="#">365 madinspiration</a>
-                          <a href="#">365 kød</a>
-                          <a href="#">365 mejeri</a>
-                          <a href="#">365 grønt & sager</a>
-                        </div>
+                      <div class="coop-nav-spacing">
+                        <h4>365 Økologisk</h4>
+                        <a href="#">365 hver dag</a>
+                        <a href="#">365 madinspiration</a>
+                        <a href="#">365 kød</a>
+                        <a href="#">365 mejeri</a>
+                        <a href="#">365 grønt & sager</a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <div class="coop-nav-spacing">
+                        <h4>365 Økologisk</h4>
+                        <a href="#">365 hver dag</a>
+                        <a href="#">365 madinspiration</a>
+                        <a href="#">365 kød</a>
+                        <a href="#">365 mejeri</a>
+                        <a href="#">365 grønt & sager</a>
+                      </div>
+
+                      <div class="coop-nav-spacing">
+                        <h4>365 Økologisk</h4>
+                        <a href="#">365 hver dag</a>
+                        <a href="#">365 madinspiration</a>
+                        <a href="#">365 kød</a>
+                        <a href="#">365 mejeri</a>
+                        <a href="#">365 grønt & sager</a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <div class="coop-nav-spacing">
+                        <h4>365 Økologisk</h4>
+                        <a href="#">365 hver dag</a>
+                        <a href="#">365 madinspiration</a>
+                        <a href="#">365 kød</a>
+                        <a href="#">365 mejeri</a>
+                        <a href="#">365 grønt & sager</a>
+                      </div>
+
+                      <div class="coop-nav-spacing">
+                        <h4>365 Økologisk</h4>
+                        <a href="#">365 hver dag</a>
+                        <a href="#">365 madinspiration</a>
+                        <a href="#">365 kød</a>
+                        <a href="#">365 mejeri</a>
+                        <a href="#">365 grønt & sager</a>
                       </div>
                     </div>
                   </div>
-                </li>
-                <li class="coop-context-nav__item">
-                  <a href="#" class="coop-nav__link coop-nav__link--is-current coop-context-nav__link--is-current coop-context-nav__link">
-                    <span><span class="coop-context-nav__link-name">Artikler</span></span>
-                  </a>
-                  <div class="dropdown-menu">
-                    <div class="row">
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-3">
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                        <div class="coop-nav-spacing">
-                          <a href="#">
-                            <img class="img-fluid" src="http://placehold.it/600x300">
-                            <strong>Mig og min mad</strong>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="coop-context-nav__item">
-                  <a href="#" class="coop-nav__link  coop-context-nav__link">
-                    <span><span class="coop-context-nav__link-name">Kategorier</span></span>
-                  </a>
-                  <div class="dropdown-menu">
-                    <div class="row">
-                      <div class="col-12 col-md-3">
+                </div>
+              </li>
+              <li class="coop-context-nav__item">
+                <a href="#" class="coop-nav__link coop-nav__link--is-current coop-context-nav__link--is-current coop-context-nav__link">
+                  <span class="coop-context-nav__link-name">Artikler</span>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-12 col-md-3">
+                      <div class="coop-nav-spacing">
                         <a href="#">
                           <img class="img-fluid" src="http://placehold.it/600x300">
                           <strong>Mig og min mad</strong>
                         </a>
                       </div>
-                      <div class="col-12 col-md-3">
+                      <div class="coop-nav-spacing">
                         <a href="#">
                           <img class="img-fluid" src="http://placehold.it/600x300">
                           <strong>Mig og min mad</strong>
                         </a>
                       </div>
-                      <div class="col-12 col-md-3">
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <div class="coop-nav-spacing">
                         <a href="#">
                           <img class="img-fluid" src="http://placehold.it/600x300">
                           <strong>Mig og min mad</strong>
                         </a>
                       </div>
-                      <div class="col-12 col-md-3">
+                      <div class="coop-nav-spacing">
+                        <a href="#">
+                          <img class="img-fluid" src="http://placehold.it/600x300">
+                          <strong>Mig og min mad</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <div class="coop-nav-spacing">
+                        <a href="#">
+                          <img class="img-fluid" src="http://placehold.it/600x300">
+                          <strong>Mig og min mad</strong>
+                        </a>
+                      </div>
+                      <div class="coop-nav-spacing">
+                        <a href="#">
+                          <img class="img-fluid" src="http://placehold.it/600x300">
+                          <strong>Mig og min mad</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <div class="coop-nav-spacing">
+                        <a href="#">
+                          <img class="img-fluid" src="http://placehold.it/600x300">
+                          <strong>Mig og min mad</strong>
+                        </a>
+                      </div>
+                      <div class="coop-nav-spacing">
+                        <a href="#">
+                          <img class="img-fluid" src="http://placehold.it/600x300">
+                          <strong>Mig og min mad</strong>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="coop-context-nav__item">
+                <a href="#" class="coop-nav__link  coop-context-nav__link">
+                  <span><span class="coop-context-nav__link-name">Kategorier</span></span>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-12 col-md-3">
+                      <div class="coop-nav-spacing">
+                        <a href="#">
+                          <img class="img-fluid" src="http://placehold.it/600x300">
+                          <strong>Mig og min mad</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <div class="coop-nav-spacing">
+                        <a href="#">
+                          <img class="img-fluid" src="http://placehold.it/600x300">
+                          <strong>Mig og min mad</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <div class="coop-nav-spacing">
+                        <a href="#">
+                          <img class="img-fluid" src="http://placehold.it/600x300">
+                          <strong>Mig og min mad</strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <div class="coop-nav-spacing">
                         <h4>Inspiration</h4>
                         <form>
                           <label class="coop-label">Text input</label>
@@ -1341,118 +977,491 @@
                       </div>
                     </div>
                   </div>
-                </li>
-                <li class="coop-context-nav__item">
-                  <a href="#" class="coop-nav__link  coop-context-nav__link">
-                    <span><span class="coop-context-nav__link-name">Om</span></span>
-                  </a>
-                  <div class="dropdown-menu coop-sub-nav">
-                    <ul>
-                      <li>
-                        <a class="coop-sub-nav__link active" href="#">Menu 1</a>
-                        <div class="sub-nav col-12 col-md-9 active">
-                          <div class="row">
-                            <div class="col-12 col-md-4">
+                </div>
+              </li>
+              <li class="coop-context-nav__item">
+                <a href="#" class="coop-nav__link  coop-context-nav__link">
+                  <span><span class="coop-context-nav__link-name">Om</span></span>
+                </a>
+                <div class="dropdown-menu coop-sub-nav">
+                  <ul>
+                    <li>
+                      <a class="coop-sub-nav__link active" href="#">Menu 1</a>
+                      <div class="sub-nav col-12 col-md-9 active">
+                        <div class="row">
+                          <div class="col-12 col-md-4">
+                            <div class="coop-nav-spacing">
                               <img class="img-fluid" src="http://placehold.it/350x450">
                               <input type="submit" class="coop-button coop-button--wide" value="CTA">
-                            </div>
-                            <div class="col-12 col-md-4">
-                              <div class="coop-nav-spacing">
-                                <h4>365 Økologisk</h4>
-                                <a href="#">365 hver dag</a>
-                                <a href="#">365 madinspiration</a>
-                                <a href="#">365 kød</a>
-                                <a href="#">365 mejeri</a>
-                                <a href="#">365 grønt & sager</a>
-                              </div>
-
-                              <div class="coop-nav-spacing">
-                                <h4>365 Økologisk</h4>
-                                <a href="#">365 hver dag</a>
-                                <a href="#">365 madinspiration</a>
-                                <a href="#">365 kød</a>
-                                <a href="#">365 mejeri</a>
-                                <a href="#">365 grønt & sager</a>
-                              </div>
-                            </div>
-                            <div class="col-12 col-md-4">
-                              <div class="coop-nav-spacing">
-                                <h4>365 Økologisk</h4>
-                                <a href="#">365 hver dag</a>
-                                <a href="#">365 madinspiration</a>
-                                <a href="#">365 kød</a>
-                                <a href="#">365 mejeri</a>
-                                <a href="#">365 grønt & sager</a>
-                              </div>
-
-                              <div class="coop-nav-spacing">
-                                <h4>365 Økologisk</h4>
-                                <a href="#">365 hver dag</a>
-                                <a href="#">365 madinspiration</a>
-                                <a href="#">365 kød</a>
-                                <a href="#">365 mejeri</a>
-                                <a href="#">365 grønt & sager</a>
-                              </div>
                             </div>
                           </div>
-                        </div>
-                      </li>
-                      <li>
-                        <a class="coop-sub-nav__link" href="#">Menu 2</a>
-                        <div class="sub-nav col-12 col-md-9">
-                          <div class="row">
-                            <div class="col-12 col-md-4">
-                              <img class="img-fluid" src="http://placehold.it/350x450">
-                              <input type="submit" class="coop-button coop-button--wide" value="CTA">
-                            </div>
-                            <div class="col-12 col-md-4">
+                          <div class="col-12 col-md-4">
+                            <div class="coop-nav-spacing">
                               <h4>365 Økologisk</h4>
-                              <p>Vi har gjort det nemt at vælge vin. Du skal bare vide, hvad du skal ha' at spise.
+                              <a href="#">365 hver dag</a>
+                              <a href="#">365 madinspiration</a>
+                              <a href="#">365 kød</a>
+                              <a href="#">365 mejeri</a>
+                              <a href="#">365 grønt & sager</a>
                             </div>
-                            <div class="col-12 col-md-4">
 
+                            <div class="coop-nav-spacing">
+                              <h4>365 Økologisk</h4>
+                              <a href="#">365 hver dag</a>
+                              <a href="#">365 madinspiration</a>
+                              <a href="#">365 kød</a>
+                              <a href="#">365 mejeri</a>
+                              <a href="#">365 grønt & sager</a>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-4">
+                            <div class="coop-nav-spacing">
+                              <h4>365 Økologisk</h4>
+                              <a href="#">365 hver dag</a>
+                              <a href="#">365 madinspiration</a>
+                              <a href="#">365 kød</a>
+                              <a href="#">365 mejeri</a>
+                              <a href="#">365 grønt & sager</a>
+                            </div>
+
+                            <div class="coop-nav-spacing">
+                              <h4>365 Økologisk</h4>
+                              <a href="#">365 hver dag</a>
+                              <a href="#">365 madinspiration</a>
+                              <a href="#">365 kød</a>
+                              <a href="#">365 mejeri</a>
+                              <a href="#">365 grønt & sager</a>
                             </div>
                           </div>
                         </div>
-                      </li>
-                    </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="coop-sub-nav__link" href="#">Menu 2</a>
+                      <div class="sub-nav col-12 col-md-9">
+                        <div class="row">
+                          <div class="col-12 col-md-4">
+                            <div class="coop-nav-spacing">
+                              <img class="img-fluid" src="http://placehold.it/350x450">
+                              <input type="submit" class="coop-button coop-button--wide" value="CTA">
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-4">
+                            <div class="coop-nav-spacing">
+                              <h4>365 Økologisk</h4>
+                              <p>Vi har gjort det nemt at vælge vin. Du skal bare vide, hvad du skal ha' at spise.</p>
+                            </a>
+                          </div>
+                          <div class="col-12 col-md-4">
+
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </header>
+
+        <script>
+          /* Toggle Mobile Navigation */
+          document.getElementById('coop-nav-show').addEventListener("click", function(){
+            document.getElementById('coop-nav').classList.add('coop-nav--mobile-visible')
+          });
+
+          document.getElementById('coop-nav-hide').addEventListener("click", function(){
+            document.getElementById('coop-nav').classList.remove('coop-nav--mobile-visible')
+          });
+        </script>
+
+        <pre class="example-code">
+          <xmp>
+            <header id="coop-nav" class="coop-nav ">
+              <!-- GLOBAL NAVIGATION -->
+              <div class="coop-global-nav">
+                <div id="coop-nav-hide" class="coop-global-nav__close">
+                  <i class="coop-icon coop-icon-close"></i>
+                </div>
+
+                <ul class="coop-nav__list coop-global-nav__list">
+                  <li class="coop-global-nav__item">
+                    <a href="https://coop.dk/kundeservice" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Kundeservice</span></span></a>
+                  </li>
+                  <li class="coop-global-nav__item">
+                    <a href="https://mad.coop.dk/" class="coop-nav__link  coop-global-nav__link"><span><span class="coop-global-nav__link-name">Dagligvarer fra Coop.dk MAD</span></span></a>
+                  </li>
+                </ul>
+
+                <div class='coop-global-nav__member coop-nav-member'>
+                  <a href="https://medlem.coop.dk/" class='coop-nav-member__signup'>
+                    <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/coop-medlem-white.png" class='coop-nav-member__logo' alt />
+                  </a>
+                  <a href="#" class='coop-nav-member__login'>
+                    <div class="coop-nav-member__icon">
+                      <i class="coop-icon coop-icon-profile"></i>
+                    </div>
+
+                    <span class="coop-nav-member__label">
+                      Log ind
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- SITE NAVIGATION -->
+              <div class="coop-site-nav">
+                <div class="coop-site-nav__inner  ">
+                  <div class="coop-site-nav__mobile">
+                    <i class="coop-icon coop-icon-burger coop-site-nav__mobile-toggle" id="coop-nav-show"></i>
+                    <i class="coop-icon coop-icon-search coop-site-nav__mobile-search"></i>
                   </div>
-                </li>
-              </ul>
-            </div>
+
+                  <a href="/" class="coop-site-nav__logo-wrap">
+                    <img src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/coop/coop-red.svg" alt="Logo" class="coop-site-nav__logo-image">
+                  </a>
+
+                  <div class="coop-site-nav__search">
+                    <div class="coop-nav-search">
+                      <i class="coop-icon coop-icon-search coop-nav-search__icon"></i>
+                      <input class="coop-nav-search__input" placeholder="Søg...">
+                    </div>
+                  </div>
+
+                  <ul class="coop-nav__list coop-site-nav__list">
+                    <li class="coop-site-nav__item">
+                      <a class="coop-nav__link coop-site-nav__link" href="#">
+                        <i class="coop-icon coop-icon-pin coop-site-nav__link-icon"></i>
+                        <div class="coop-site-nav__link-name">Find butik</div>
+                      </a>
+                    </li>
+
+                    <li class="coop-site-nav__item">
+                      <a class="coop-nav__link coop-site-nav__link" href="#">
+                        <i class="coop-icon coop-icon-catalogue coop-site-nav__link-icon"></i>
+                        <div class="coop-site-nav__link-name">Tilbudsavis</div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- CONTEXT NAVIGATION -->
+              <div class="coop-context-nav">
+                <ul class="coop-nav__list coop-context-nav__list">
+                  <li class="coop-context-nav__item">
+                    <a href="#" class="coop-nav__link  coop-context-nav__link">
+                      <span class="coop-context-nav__link-name">Temaer</span>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="row">
+                        <div class="col-12 col-md-3">
+                          <div class="coop-nav-spacing">
+                            <h4>365 Økologisk</h4>
+                            <a href="#">365 hver dag</a>
+                            <a href="#">365 madinspiration</a>
+                            <a href="#">365 kød</a>
+                            <a href="#">365 mejeri</a>
+                            <a href="#">365 grønt & sager</a>
+                          </div>
+
+                          <div class="coop-nav-spacing">
+                            <h4>365 Økologisk</h4>
+                            <a href="#">365 hver dag</a>
+                            <a href="#">365 madinspiration</a>
+                            <a href="#">365 kød</a>
+                            <a href="#">365 mejeri</a>
+                            <a href="#">365 grønt & sager</a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                          <div class="coop-nav-spacing">
+                            <h4>365 Økologisk</h4>
+                            <a href="#">365 hver dag</a>
+                            <a href="#">365 madinspiration</a>
+                            <a href="#">365 kød</a>
+                            <a href="#">365 mejeri</a>
+                            <a href="#">365 grønt & sager</a>
+                          </div>
+
+                          <div class="coop-nav-spacing">
+                            <h4>365 Økologisk</h4>
+                            <a href="#">365 hver dag</a>
+                            <a href="#">365 madinspiration</a>
+                            <a href="#">365 kød</a>
+                            <a href="#">365 mejeri</a>
+                            <a href="#">365 grønt & sager</a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                          <div class="coop-nav-spacing">
+                            <h4>365 Økologisk</h4>
+                            <a href="#">365 hver dag</a>
+                            <a href="#">365 madinspiration</a>
+                            <a href="#">365 kød</a>
+                            <a href="#">365 mejeri</a>
+                            <a href="#">365 grønt & sager</a>
+                          </div>
+
+                          <div class="coop-nav-spacing">
+                            <h4>365 Økologisk</h4>
+                            <a href="#">365 hver dag</a>
+                            <a href="#">365 madinspiration</a>
+                            <a href="#">365 kød</a>
+                            <a href="#">365 mejeri</a>
+                            <a href="#">365 grønt & sager</a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                          <div class="coop-nav-spacing">
+                            <h4>365 Økologisk</h4>
+                            <a href="#">365 hver dag</a>
+                            <a href="#">365 madinspiration</a>
+                            <a href="#">365 kød</a>
+                            <a href="#">365 mejeri</a>
+                            <a href="#">365 grønt & sager</a>
+                          </div>
+
+                          <div class="coop-nav-spacing">
+                            <h4>365 Økologisk</h4>
+                            <a href="#">365 hver dag</a>
+                            <a href="#">365 madinspiration</a>
+                            <a href="#">365 kød</a>
+                            <a href="#">365 mejeri</a>
+                            <a href="#">365 grønt & sager</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="coop-context-nav__item">
+                    <a href="#" class="coop-nav__link coop-nav__link--is-current coop-context-nav__link--is-current coop-context-nav__link">
+                      <span class="coop-context-nav__link-name">Artikler</span>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="row">
+                        <div class="col-12 col-md-3">
+                          <div class="coop-nav-spacing">
+                            <a href="#">
+                              <img class="img-fluid" src="http://placehold.it/600x300">
+                              <strong>Mig og min mad</strong>
+                            </a>
+                          </div>
+                          <div class="coop-nav-spacing">
+                            <a href="#">
+                              <img class="img-fluid" src="http://placehold.it/600x300">
+                              <strong>Mig og min mad</strong>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                          <div class="coop-nav-spacing">
+                            <a href="#">
+                              <img class="img-fluid" src="http://placehold.it/600x300">
+                              <strong>Mig og min mad</strong>
+                            </a>
+                          </div>
+                          <div class="coop-nav-spacing">
+                            <a href="#">
+                              <img class="img-fluid" src="http://placehold.it/600x300">
+                              <strong>Mig og min mad</strong>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                          <div class="coop-nav-spacing">
+                            <a href="#">
+                              <img class="img-fluid" src="http://placehold.it/600x300">
+                              <strong>Mig og min mad</strong>
+                            </a>
+                          </div>
+                          <div class="coop-nav-spacing">
+                            <a href="#">
+                              <img class="img-fluid" src="http://placehold.it/600x300">
+                              <strong>Mig og min mad</strong>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                          <div class="coop-nav-spacing">
+                            <a href="#">
+                              <img class="img-fluid" src="http://placehold.it/600x300">
+                              <strong>Mig og min mad</strong>
+                            </a>
+                          </div>
+                          <div class="coop-nav-spacing">
+                            <a href="#">
+                              <img class="img-fluid" src="http://placehold.it/600x300">
+                              <strong>Mig og min mad</strong>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="coop-context-nav__item">
+                    <a href="#" class="coop-nav__link  coop-context-nav__link">
+                      <span><span class="coop-context-nav__link-name">Kategorier</span></span>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="row">
+                        <div class="col-12 col-md-3">
+                          <div class="coop-nav-spacing">
+                            <a href="#">
+                              <img class="img-fluid" src="http://placehold.it/600x300">
+                              <strong>Mig og min mad</strong>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                          <div class="coop-nav-spacing">
+                            <a href="#">
+                              <img class="img-fluid" src="http://placehold.it/600x300">
+                              <strong>Mig og min mad</strong>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                          <div class="coop-nav-spacing">
+                            <a href="#">
+                              <img class="img-fluid" src="http://placehold.it/600x300">
+                              <strong>Mig og min mad</strong>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                          <div class="coop-nav-spacing">
+                            <h4>Inspiration</h4>
+                            <form>
+                              <label class="coop-label">Text input</label>
+                              <input type="text" class="coop-text-input" placeholder="Text input">
+
+                              <input type="text" class="coop-text-input" placeholder="Text input">
+
+                              <label class="coop-checkbox__label">
+                                <input class="coop-checkbox__input" type="checkbox" value="true">
+                                <span class="coop-checkbox__text">Disclaimer text</span>
+                              </label>
+
+                              <input type="submit" class="coop-button coop-button--wide" value="CTA">
+                              <p class="small">Afmeld nyhedsbrev</p>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="coop-context-nav__item">
+                    <a href="#" class="coop-nav__link  coop-context-nav__link">
+                      <span><span class="coop-context-nav__link-name">Om</span></span>
+                    </a>
+                    <div class="dropdown-menu coop-sub-nav">
+                      <ul>
+                        <li>
+                          <a class="coop-sub-nav__link active" href="#">Menu 1</a>
+                          <div class="sub-nav col-12 col-md-9 active">
+                            <div class="row">
+                              <div class="col-12 col-md-4">
+                                <div class="coop-nav-spacing">
+                                  <img class="img-fluid" src="http://placehold.it/350x450">
+                                  <input type="submit" class="coop-button coop-button--wide" value="CTA">
+                                </div>
+                              </div>
+                              <div class="col-12 col-md-4">
+                                <div class="coop-nav-spacing">
+                                  <h4>365 Økologisk</h4>
+                                  <a href="#">365 hver dag</a>
+                                  <a href="#">365 madinspiration</a>
+                                  <a href="#">365 kød</a>
+                                  <a href="#">365 mejeri</a>
+                                  <a href="#">365 grønt & sager</a>
+                                </div>
+
+                                <div class="coop-nav-spacing">
+                                  <h4>365 Økologisk</h4>
+                                  <a href="#">365 hver dag</a>
+                                  <a href="#">365 madinspiration</a>
+                                  <a href="#">365 kød</a>
+                                  <a href="#">365 mejeri</a>
+                                  <a href="#">365 grønt & sager</a>
+                                </div>
+                              </div>
+                              <div class="col-12 col-md-4">
+                                <div class="coop-nav-spacing">
+                                  <h4>365 Økologisk</h4>
+                                  <a href="#">365 hver dag</a>
+                                  <a href="#">365 madinspiration</a>
+                                  <a href="#">365 kød</a>
+                                  <a href="#">365 mejeri</a>
+                                  <a href="#">365 grønt & sager</a>
+                                </div>
+
+                                <div class="coop-nav-spacing">
+                                  <h4>365 Økologisk</h4>
+                                  <a href="#">365 hver dag</a>
+                                  <a href="#">365 madinspiration</a>
+                                  <a href="#">365 kød</a>
+                                  <a href="#">365 mejeri</a>
+                                  <a href="#">365 grønt & sager</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <a class="coop-sub-nav__link" href="#">Menu 2</a>
+                          <div class="sub-nav col-12 col-md-9">
+                            <div class="row">
+                              <div class="col-12 col-md-4">
+                                <div class="coop-nav-spacing">
+                                  <img class="img-fluid" src="http://placehold.it/350x450">
+                                  <input type="submit" class="coop-button coop-button--wide" value="CTA">
+                                </div>
+                              </div>
+                              <div class="col-12 col-md-4">
+                                <div class="coop-nav-spacing">
+                                  <h4>365 Økologisk</h4>
+                                  <p>Vi har gjort det nemt at vælge vin. Du skal bare vide, hvad du skal ha' at spise.</p>
+                                </a>
+                              </div>
+                              <div class="col-12 col-md-4">
+
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </header>
 
             <script>
-              /* Toggle Mobile Navigation*/
+              /* Toggle Mobile Navigation */
               document.getElementById('coop-nav-show').addEventListener("click", function(){
                 document.getElementById('coop-nav').classList.add('coop-nav--mobile-visible')
-              })
+              });
 
               document.getElementById('coop-nav-hide').addEventListener("click", function(){
                 document.getElementById('coop-nav').classList.remove('coop-nav--mobile-visible')
-              })
+              });
             </script>
-          </header>
 
-              <script>
-                /* Toggle Mobile Navigation*/
-                document.getElementById('coop-nav-show').addEventListener("click", function(){
-                  document.getElementById('coop-nav').classList.add('coop-nav--mobile-visible')
-                })
-
-                document.getElementById('coop-nav-hide').addEventListener("click", function(){
-                  document.getElementById('coop-nav').classList.remove('coop-nav--mobile-visible')
-                })
-              </script>
-            </xmp>
-          </pre>
-        </section>
-
-        <section style="border: none; margin-bottom: 0;">
-          <h2 id="footer" class="index">Footer</h2>
-        </section>
+          </xmp>
+        </pre>
+      </section>
     </div>
 
-    <footer class="coop-footer">
+    <div class="container">
+      <section style="border: none; margin-bottom: 0;">
+        <h2 id="footer" class="index">Footer</h2>
+        <p>Remove <strong>coop-footer--light</strong> from <strong>&lt;footer&gt;</strong> to get dark version</p>
+      </section>
+    </div>
+
+    <footer class="coop-footer coop-footer--light">
       <div class="container-fluid coop-footer__brand">
         <div class="row">
           <div class="col-12">
@@ -1510,36 +1519,49 @@
         </div>
       </div>
 
-      <div class="container coop-footer__more_brands">
+      <div class="container coop-footer-chains">
         <div class="row">
           <div class="col-12">
             <h4 class="coop-footer__title">Besøg vores andre kæder</h4>
+            <a href="https://fakta.dk" target="_blank" class="coop-footer-chains__link">
+              <img
+                src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
+                alt="Logo"
+                class="coop-footer-chains__logo"
+              />
+            </a>
 
-            <img
-              src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-              alt="Logo"
-              class="coop-footer__logo"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-              alt="Logo"
-              class="coop-footer__logo"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-              alt="Logo"
-              class="coop-footer__logo"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-              alt="Logo"
-              class="coop-footer__logo"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-              alt="Logo"
-              class="coop-footer__logo"
-            />
+            <a href="https://fakta.dk" target="_blank" class="coop-footer-chains__link">
+              <img
+                src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
+                alt="Logo"
+                class="coop-footer-chains__logo"
+              />
+            </a>
+
+            <a href="https://fakta.dk" target="_blank" class="coop-footer-chains__link">
+              <img
+                src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
+                alt="Logo"
+                class="coop-footer-chains__logo"
+              />
+            </a>
+
+            <a href="https://fakta.dk" target="_blank" class="coop-footer-chains__link">
+              <img
+                src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
+                alt="Logo"
+                class="coop-footer-chains__logo"
+              />
+            </a>
+
+            <a href="https://fakta.dk" target="_blank" class="coop-footer-chains__link">
+              <img
+                src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
+                alt="Logo"
+                class="coop-footer-chains__logo"
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -1552,7 +1574,7 @@
     <div class="container">
       <pre class="example-code">
         <xmp>
-          <footer class="coop-footer">
+          <footer class="coop-footer coop-footer--light">
             <div class="container-fluid coop-footer__brand">
               <div class="row">
                 <div class="col-12">
@@ -1610,236 +1632,49 @@
               </div>
             </div>
 
-            <div class="container coop-footer__more_brands">
+            <div class="container coop-footer-chains">
               <div class="row">
                 <div class="col-12">
                   <h4 class="coop-footer__title">Besøg vores andre kæder</h4>
+                  <a href="https://fakta.dk" target="_blank" class="coop-footer-chains__link">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
+                      alt="Logo"
+                      class="coop-footer-chains__logo"
+                    />
+                  </a>
 
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-                    alt="Logo"
-                    class="coop-footer__logo"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-                    alt="Logo"
-                    class="coop-footer__logo"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-                    alt="Logo"
-                    class="coop-footer__logo"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-                    alt="Logo"
-                    class="coop-footer__logo"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-                    alt="Logo"
-                    class="coop-footer__logo"
-                  />
-                </div>
-              </div>
-            </div>
+                  <a href="https://fakta.dk" target="_blank" class="coop-footer-chains__link">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
+                      alt="Logo"
+                      class="coop-footer-chains__logo"
+                    />
+                  </a>
 
-            <div class="coop-footer__contact">
-              Coop Danmark A/S - Roskildevej 65, 2620 Albertslund - CVR-nr. 26259495
-            </div>
-          </footer>
-        </xmp>
-      </pre>
-    </div>
+                  <a href="https://fakta.dk" target="_blank" class="coop-footer-chains__link">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
+                      alt="Logo"
+                      class="coop-footer-chains__logo"
+                    />
+                  </a>
 
-    <footer class="coop-footer light">
-      <div class="container-fluid coop-footer__brand">
-        <div class="row">
-          <div class="col-12">
-            <img
-              src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/kvickly/kvickly-dark.svg"
-              alt="Logo"
-              class="coop-footer__logo"
-            />
-          </div>
-        </div>
-      </div>
+                  <a href="https://fakta.dk" target="_blank" class="coop-footer-chains__link">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
+                      alt="Logo"
+                      class="coop-footer-chains__logo"
+                    />
+                  </a>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6 col-6">
-            <h4 class="coop-footer__title">Kvickly</h4>
-
-            <ul class="coop-footer__list">
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-sm-6 col-6">
-            <h4 class="coop-footer__title">Coop</h4>
-
-            <ul class="coop-footer__list">
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-sm-6 col-6">
-            <h4 class="coop-footer__title">Meget mere</h4>
-
-            <ul class="coop-footer__list">
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-sm-6 col-6">
-            <h4 class="coop-footer__title">Følg os</h4>
-
-            <ul class="coop-footer__list">
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="container coop-footer__more_brands">
-        <div class="row">
-          <div class="col-12">
-            <h4 class="coop-footer__title">Besøg vores andre kæder</h4>
-
-            <img
-              src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-              alt="Logo"
-              class="coop-footer__logo"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-              alt="Logo"
-              class="coop-footer__logo"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-              alt="Logo"
-              class="coop-footer__logo"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-              alt="Logo"
-              class="coop-footer__logo"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-              alt="Logo"
-              class="coop-footer__logo"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="coop-footer__contact">
-        Coop Danmark A/S - Roskildevej 65, 2620 Albertslund - CVR-nr. 26259495
-      </div>
-    </footer>
-
-    <div class="container">
-      <pre class="example-code">
-        <xmp>
-          <footer class="coop-footer light">
-            <div class="container-fluid coop-footer__brand">
-              <div class="row">
-                <div class="col-12">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/kvickly/kvickly-dark.svg"
-                    alt="Logo"
-                    class="coop-footer__logo"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                  <h4 class="coop-footer__title">Kvickly</h4>
-
-                  <ul class="coop-footer__list">
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                  </ul>
-                </div>
-
-                <div class="col-lg-3 col-sm-6">
-                  <h4 class="coop-footer__title">Coop</h4>
-
-                  <ul class="coop-footer__list">
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                  </ul>
-                </div>
-
-                <div class="col-lg-3 col-sm-6">
-                  <h4 class="coop-footer__title">Meget mere</h4>
-
-                  <ul class="coop-footer__list">
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                  </ul>
-                </div>
-
-                <div class="col-lg-3 col-sm-6">
-                  <h4 class="coop-footer__title">Følg os</h4>
-
-                  <ul class="coop-footer__list">
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="container coop-footer__more_brands">
-              <div class="row">
-                <div class="col-12">
-                  <h4 class="coop-footer__title">Besøg vores andre kæder</h4>
-
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-                    alt="Logo"
-                    class="coop-footer__logo"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-                    alt="Logo"
-                    class="coop-footer__logo"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-                    alt="Logo"
-                    class="coop-footer__logo"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-                    alt="Logo"
-                    class="coop-footer__logo"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
-                    alt="Logo"
-                    class="coop-footer__logo"
-                  />
+                  <a href="https://fakta.dk" target="_blank" class="coop-footer-chains__link">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/coop-digital/coop-cvi/dist/logo/fakta/fakta-box-color.svg"
+                      alt="Logo"
+                      class="coop-footer-chains__logo"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
